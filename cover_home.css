@@ -26,14 +26,6 @@ a:hover {
   left: 0;
   z-index: -1000;
 }
-.viewportContent {
-  position: relative;
-  height: 100vh;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 /*
  * Base structure
