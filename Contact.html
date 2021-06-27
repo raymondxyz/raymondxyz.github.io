@@ -15,27 +15,40 @@
     <link href="bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
+    <link href="cover_contact.css" rel="stylesheet">
   </head>
 
   <body>
-    <div class="masthead clearfix">
-      <div class="inner">
-        <h3 class="masthead-brand">Raymond Zhang</h3>
-         <nav>
-            <ul class="nav masthead-nav">
-             <li class="active"><a href="Index.html">Home</a></li>
-             <li><a href="AboutMe.html">About Me</a></li>
-             <li><a href="MyExperience.html">My Experience</a></li>
-             <li><a href="MyProjects.html">My Projects</a></li>
-             <li><a href="Contact.html">Contact</a></li>
-             <li><a href="https://www.linkedin.com/in/raymondxyz/" target="_blank" rel="noopener noreferrer"><img src="images/linkedin_logo.png" alt="LinkedIn" style="width:30px;height:30px;"></a></li>
-             <li><a href="https://www.instagram.com/raymond.xyz/" target="_blank" rel="noopener noreferrer"><img src="images/instagram_logo.svg" alt="Instagram" style="width:30px;height:30px;"></a></li>
-            </ul>           
-         </nav>
+    <div class="banner_wrapper" id="wrapping_header">
+      <div class="masthead clearfix">
+        <div class="inner">
+          <h3 class="masthead-brand">Raymond Zhang</h3>
+          <nav>
+              <ul class="nav masthead-nav">
+              <li class="active"><a href="Index.html">Home</a></li>
+              <li><a href="AboutMe.html">About Me</a></li>
+              <li><a href="MyExperience.html">My Experience</a></li>
+              <li><a href="MyProjects.html">My Projects</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+              <li><a href="https://www.linkedin.com/in/raymondxyz/" target="_blank" rel="noopener noreferrer"><img src="images/linkedin_logo.png" alt="LinkedIn" style="width:30px;height:30px;"></a></li>
+              <li><a href="https://www.instagram.com/raymond.xyz/" target="_blank" rel="noopener noreferrer"><img src="images/instagram_logo.svg" alt="Instagram" style="width:30px;height:30px;"></a></li>
+              </ul>           
+          </nav>
+        </div>
       </div>
     </div>
 
+    <div class="box_description">
+      <h2> Want to talk? </h2>
+    </div>
+
+    <form action="mailto:raymondz1621@gmail.com" method="POST" enctype="multipart/form-data" name="email">
+    <label for="message">Drop me an email below:</label>
+    <textarea id="message" name="message" rows="8" cols="80" placeholder="Write your message here."></textarea>
+    <br>
+    <button class="btn btn-lg btn-default" type="submit" value="Submit"> Send </button>
+    </form>
+    
     
   </body>
 
