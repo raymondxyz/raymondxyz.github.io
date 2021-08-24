@@ -2,6 +2,12 @@
  * Globals
  */
 
+ /* NEW PERSONAL CLASSES POSITIONING */
+ .developets {
+   margin-top: 120px;
+   position: fixed;
+ }
+
 /* Links */
 a,
 a:focus,
