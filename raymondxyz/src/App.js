@@ -1,16 +1,19 @@
 import React from 'react'
+import Welcome from "./components/welcome/Welcome"
+import AboutMe from './components/about_me/AboutMe';
 import './styling/App.css';
 
 function App() {
   return (
-    <div classname = "Raymond's Website">
-      <header>
-        <p>
-          Hello World
-        </p>
-      </header>
+    <div>
+      <Welcome>
+
+      </Welcome>
+      <AboutMe>
+
+      </AboutMe>
     </div>
-  );
+  )
 }
 
 export default App;
