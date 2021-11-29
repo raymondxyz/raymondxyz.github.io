@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2&display=swap');
+
+* {
+    font-family: 'M PLUS 2', sans-serif;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size : 4em;
+}
+
+.full_section {
+    width : 100vw;
+    height : 100vh;
+    display : flex;
+}
+
+.section_main_content {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 10vw;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-right: 0;
+    padding-left: 0;
+    width: 100vw;
+    overflow: hidden;
+}
