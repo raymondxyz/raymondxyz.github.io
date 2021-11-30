@@ -10,9 +10,9 @@ h1 {
 }
 
 .full_section {
-    width : 100vw;
-    height : 100vh;
-    display : flex;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
 }
 
 .section_main_content {
@@ -25,5 +25,22 @@ h1 {
     padding-right: 0;
     padding-left: 0;
     width: 100vw;
+    overflow: hidden;
+}
+
+.footer_bar {
+    position: absolute;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.footer_content {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: inline-flex;
     overflow: hidden;
 }
