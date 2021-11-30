@@ -1,6 +1,8 @@
-import React from 'react';
-import  { colors } from '../../styling/colors'
-import { useTrail, animated } from 'react-spring';
+import React from "react";
+import  { colors } from "../../styling/colors";
+import { FaLinkedin, FaInstagram } from "react-icons/fa";
+import { AiOutlineMail, AiFillGithub } from "react-icons/ai";
+import { useTrail, animated } from "react-spring";
 
 function Welcome({
 

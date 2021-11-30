@@ -13,16 +13,24 @@ function Footer({
         >
             <ul className="footer_content_left">
                 <li className="footer_link">
-                    <a href="https://www.linkedin.com/in/raymondxyz/"><FaLinkedin color={colors.black} size="30px"></FaLinkedin></a>
+                    <a href="https://www.linkedin.com/in/raymondxyz/" target="_blank" rel="noreferrer">
+                        <FaLinkedin color={colors.black} size="30px"></FaLinkedin>
+                    </a>
                 </li>
                 <li className="footer_link">
-                    <a href="https://github.com/raymondxyz"><AiFillGithub color={colors.black} size="30px"></AiFillGithub></a>
+                    <a href="https://github.com/raymondxyz" target="_blank" rel="noreferrer">
+                        <AiFillGithub color={colors.black} size="30px"></AiFillGithub>
+                    </a>
                 </li>
                 <li className="footer_link">
-                    <a href="https://www.instagram.com/raymond.xyz/"><FaInstagram color={colors.black} size ="30px"></FaInstagram></a>
+                    <a href="https://www.instagram.com/raymond.xyz/" target="_blank" rel="noreferrer">
+                        <FaInstagram color={colors.black} size ="30px"></FaInstagram>
+                    </a>
                 </li>
                 <li className="footer_link"> 
-                    <a href="mailto:raymondxyzhang@gmail.com"><AiOutlineMail color={colors.black} size="30px"></AiOutlineMail></a>
+                    <a href="mailto:raymondxyzhang@gmail.com" target="_blank" rel="noreferrer">
+                        <AiOutlineMail color={colors.black} size="30px"></AiOutlineMail>
+                    </a>
                 </li>
             </ul>
             <div className="footer_content_right">
