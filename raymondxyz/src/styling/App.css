@@ -28,19 +28,45 @@ h1 {
     overflow: hidden;
 }
 
+
+/** 
+* CSS for the footer component (Footer.JS)
+**/
+
 .footer_bar {
-    position: absolute;
+    position: relative;
+    margin: 0 0;
     width: 100vw;
     height: 60px;
     display: flex;
-    margin: 0;
-    padding: 0;
 }
 
-.footer_content {
-    margin: 0;
-    padding: 0;
+.footer_content_left {
+    padding: 0 30px;
     position: absolute;
+    left: 0;
+    display: flexbox;
+    overflow: hidden;
+}
+
+.footer_link {
+    padding: 0 30px;
+    position: relative;
     display: inline-flex;
     overflow: hidden;
+}
+
+.footer_content_right {
+    margin: 0 0;
+    font-size: 1.1em;
+    position: absolute;
+    right: 50px;
+    display: flexbox;
+    overflow: hidden;
+}
+
+.footer_icon {
+    margin: 0 5px;
+    vertical-align: middle;
+    position: relative;
 }
