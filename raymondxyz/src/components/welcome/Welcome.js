@@ -57,6 +57,12 @@ function Welcome({
                             <AiOutlineMail color={colors.white} size="40px"></AiOutlineMail>
                         </a>
                 </div>
+                <h1 style={{ color: colors.white }}>Welcome!</h1>
+                <h2 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Information point 1 </h2>
+                <h2 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Information point 2 </h2>
+                <h2 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Information point 3 </h2>
+                <h2 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Information point 4 </h2>
+
             </div>
 
             { springDone ? (
