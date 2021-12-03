@@ -23,9 +23,39 @@ function Welcome({
           className="full_section"
           style={{ backgroundColor: colors.white }}
         >
-            <div className="section_main_content" style={{position:"absolute"}}>
-                <div>
-                    
+            <div className="section_main_content" style={{ position:"absolute" }}>
+                <div style={{ margin: "50px 0 0 0" }}>
+                        <a 
+                          href="https://www.linkedin.com/in/raymondxyz/" 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          style={{ paddingRight: "20px" }}>
+                            <FaLinkedin color={colors.white} size="40px"></FaLinkedin>
+                        </a>
+                        <a 
+                          href="https://github.com/raymondxyz" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          style={{ paddingRight: "20px"  }}
+                        >
+                            <AiFillGithub color={colors.white} size="40px"></AiFillGithub>
+                        </a>
+                        <a 
+                          href="https://www.instagram.com/raymond.xyz/" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          style={{ paddingRight: "20px" }}
+                        >
+                            <FaInstagram color={colors.white} size ="40px"></FaInstagram>
+                        </a>
+                        <a 
+                          href="mailto:raymondxyzhang@gmail.com" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          style={{ paddingRight: "20px" }}
+                        >
+                            <AiOutlineMail color={colors.white} size="40px"></AiOutlineMail>
+                        </a>
                 </div>
             </div>
 

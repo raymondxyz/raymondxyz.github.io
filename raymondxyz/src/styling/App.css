@@ -18,9 +18,10 @@ h1 {
 }
 
 .section_main_content {
-    margin: 0 0 0 10vw;
+    margin: 0 0 0 15vw;
     padding: 70px 0;
     width: 100vw;
+    align-items: center;
     overflow: hidden;
 }
 
