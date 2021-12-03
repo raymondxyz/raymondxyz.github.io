@@ -6,7 +6,7 @@ function SpringBar({
 }) {
     return (
         <div
-          style={{ width: barWidth, color: barColor, height: "100vh" }}
+          style={{ width: barWidth, backgroundColor: barColor, height: "100vh" }}
         >
         </div>
     )
