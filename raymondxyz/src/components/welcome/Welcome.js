@@ -23,10 +23,12 @@ function Welcome({
           className="full_section"
           style={{ backgroundColor: colors.white }}
         >
-            {/* <div className="section_main_content">
-                <h1> Hi This Is Landing Component </h1>
-            </div> */}
-            
+            <div className="section_main_content" style={{position:"absolute"}}>
+                <div>
+                    
+                </div>
+            </div>
+
             { springDone ? (
                 <div 
                   style={{ 

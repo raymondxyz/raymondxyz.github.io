@@ -3,6 +3,8 @@
 * {
     font-family: 'M PLUS 2', sans-serif;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -16,14 +18,8 @@ h1 {
 }
 
 .section_main_content {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: 0;
-    margin-left: 10vw;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    padding-right: 0;
-    padding-left: 0;
+    margin: 0 0 0 10vw;
+    padding: 70px 0;
     width: 100vw;
     overflow: hidden;
 }
@@ -34,7 +30,6 @@ h1 {
 **/
 
 .footer_bar {
-    position: relative;
     margin: 0 0;
     width: 100vw;
     height: 60px;
@@ -42,8 +37,8 @@ h1 {
 }
 
 .footer_content_left {
-    padding: 0 30px;
-    position: absolute;
+    padding: 15px 30px;
+    /* position: absolute; */
     left: 0;
     display: flexbox;
     overflow: hidden;
@@ -57,7 +52,7 @@ h1 {
 }
 
 .footer_content_right {
-    margin: 0 0;
+    margin: 15px 0;
     font-size: 1.1em;
     position: absolute;
     right: 50px;
@@ -68,5 +63,5 @@ h1 {
 .footer_icon {
     margin: 0 5px;
     vertical-align: middle;
-    position: relative;
+    /* position: relative; */
 }
