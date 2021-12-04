@@ -1,5 +1,7 @@
 import React from 'react';
 import { colors } from '../../styling/colors'
+import NavArrowDown from '../miscellaneous/NavArrowDown';
+import NavArrowUp from '../miscellaneous/NavArrowUp';
 
 function AboutMe({
   scrollDown,
@@ -17,8 +19,12 @@ function AboutMe({
             <div 
               className="section_main_content"
             >
-                <h1> About Me Section </h1>
+                <NavArrowUp scrollUp={scrollUp} tooltipUp={tooltipUp}></NavArrowUp>
+                  <h1> About Me Section </h1>
+                <NavArrowDown scrollDown={scrollDown} tooltipDown={tooltipDown}></NavArrowDown>
+
             </div>
+
         </div>
     )
 }

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import  { colors } from "../../styling/colors";
 import SpringBar from "./SpringBar";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
-import { AiOutlineMail, AiFillGithub } from "react-icons/ai";
+import { AiOutlineMail, AiFillGithub, AiOutlineBgColors } from "react-icons/ai";
 import { Trail, animated, config } from "react-spring";
 import NavArrowDown from "../miscellaneous/NavArrowDown";
 
@@ -67,7 +67,11 @@ function Welcome({
                 <h2 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Information point 3 </h2>
                 <h2 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Information point 4 </h2>
 
-                <NavArrowDown scrollDown={scrollDown} tooltipDown={tooltipDown}></NavArrowDown>
+                <NavArrowDown
+                  scrollDown={scrollDown}
+                  tooltipDown={tooltipDown}
+                  coloring={colors.white}
+                ></NavArrowDown>
 
             </div>
 

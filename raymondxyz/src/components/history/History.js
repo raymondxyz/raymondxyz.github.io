@@ -1,17 +1,27 @@
 import React from 'react';
 import { colors } from '../../styling/colors'
+import NavArrowDown from '../miscellaneous/NavArrowDown';
+import NavArrowUp from '../miscellaneous/NavArrowUp';
 
 function History({
-
+    scrollDown,
+    scrollUp,
+    tooltipDown,
+    tooltipUp,
+    id
 }) {
     return (
         <div
           className="full_section"
           style={{ backgroundColor: colors.grey }}
+          id={id}
         >
-            <div classname="section_main_content">
-                
-                This is the History section
+            <div
+              className="section_main_content"
+            > 
+                <NavArrowUp scrollUp={scrollUp} tooltipUp={tooltipUp}></NavArrowUp>
+                    <h1> History Section </h1>
+                <NavArrowDown scrollDown={scrollDown} tooltipDown={tooltipDown}></NavArrowDown>
             </div>
         </div>
     )

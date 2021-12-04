@@ -19,24 +19,38 @@ function App() {
       </Welcome>
 
       <AboutMe
+        scrollDown="skills"
+        tooltipDown="Skills"
+        scrollUp="welcome"
+        tooltipUp="Welcome"
         id="aboutme"
       >
 
       </AboutMe>
 
       <Skills
+        scrollDown="history"
+        tooltipDown="History"
+        scrollUp="aboutme"
+        tooltipUp="About Me"
         id="skills"
       >
 
       </Skills>
 
       <History
+        scrollDown="projects"
+        tooltipDown="Projects"
+        scrollUp="skills"
+        tooltipUp="Skills"
         id="history"
       >
 
       </History>
 
       <Projects
+        scrollUp="history"
+        tooltipUp="History"
         id="projects"
       >
 

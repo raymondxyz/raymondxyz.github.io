@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { colors } from "./../../styling/colors"
 import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-scroll";
 import { useSpring, animated, config } from  "react-spring";
@@ -9,6 +8,7 @@ function NavArrowDown({
     scrollUp,
     tooltipDown,
     tooltipUp,
+    coloring
 }) {
 
     const AnimatedIcon = animated(IoIosArrowDown)
@@ -25,7 +25,7 @@ function NavArrowDown({
     }
 
     return (
-            <div style={{ marginTop: "60px" }}>
+        <div style={{ marginTop: "60px", alignItems: "center", display: "inline-flex"}}>
             <Link
                 onMouseEnter={toggleIsHover}
                 onMouseLeave={toggleIsHover}
@@ -34,17 +34,16 @@ function NavArrowDown({
             >
                 <AnimatedIcon
                     size={navArrow.size}
-                    style={{ color: colors.white, cursor: "pointer", marginLeft: "30px" }}
+                    style={{ color: coloring, cursor: "pointer", marginLeft: "30px", display: "inline-flex" }}
                 ></AnimatedIcon>
             </Link>
 
             <animated.div
                 style={{
-                    justifyContent: "row",
-                    opacity: navArrow.opacity,
+                    opacity: navArrow.opacity
                 }}
             >
-                <h4 style={{ color: colors.white, marginLeft: "20px" }}>{tooltipDown}</h4>
+                <h4 style={{ color: coloring, marginLeft: "10px", display: "inline-flex" }}>{tooltipDown}</h4>
             </animated.div>
         </div> 
     )
