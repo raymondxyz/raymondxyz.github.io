@@ -25,27 +25,29 @@ function NavArrowDown({
     }
 
     return (
-        <div style={{ marginTop: "60px", alignItems: "center", display: "inline-flex"}}>
-            <Link
-                onMouseEnter={toggleIsHover}
-                onMouseLeave={toggleIsHover}
-                to={scrollDown}
-                smooth={true}
-            >
-                <AnimatedIcon
-                    size={navArrow.size}
-                    style={{ color: coloring, cursor: "pointer", marginLeft: "30px", display: "inline-flex" }}
-                ></AnimatedIcon>
-            </Link>
+        <div style={{ display: "inline-block" }}>
+            <div style={{ marginTop: "30px", alignItems: "center", display: "inline-flex"}}>
+                <Link
+                    onMouseEnter={toggleIsHover}
+                    onMouseLeave={toggleIsHover}
+                    to={scrollDown}
+                    smooth={true}
+                >
+                    <AnimatedIcon
+                        size={navArrow.size}
+                        style={{ color: coloring, cursor: "pointer", marginLeft: "30px", display: "inline-flex" }}
+                    ></AnimatedIcon>
+                </Link>
 
-            <animated.div
-                style={{
-                    opacity: navArrow.opacity
-                }}
-            >
-                <h4 style={{ color: coloring, marginLeft: "10px", display: "inline-flex" }}>{tooltipDown}</h4>
-            </animated.div>
-        </div> 
+                <animated.div
+                    style={{
+                        opacity: navArrow.opacity
+                    }}
+                >
+                    <h4 style={{ color: coloring, marginLeft: "10px", display: "inline-flex" }}>{tooltipDown}</h4>
+                </animated.div>
+            </div> 
+        </div>
     )
 }
 

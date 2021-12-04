@@ -26,28 +26,30 @@ function NavArrowUp({
     }
 
     return (
-        <div style={{ marginBottom: "60px", alignItems: "center", display: "inline-flex" }}>
+        <div style={{ display: "inline-block"}}>
+            <div style={{ marginBottom: "30px", alignItems: "center", display: "inline-flex" }}>
 
-            <Link
-                onMouseEnter={toggleIsHover}
-                onMouseLeave={toggleIsHover}
-                to={scrollUp}
-                smooth={true}
-            >
-                <AnimatedIcon
-                    size={navArrow.size}
-                    style={{ color: coloring, cursor: "pointer", marginLeft: "30px" }}
-                ></AnimatedIcon>
-            </Link>
+                <Link
+                    onMouseEnter={toggleIsHover}
+                    onMouseLeave={toggleIsHover}
+                    to={scrollUp}
+                    smooth={true}
+                >
+                    <AnimatedIcon
+                        size={navArrow.size}
+                        style={{ color: coloring, cursor: "pointer", marginLeft: "30px" }}
+                    ></AnimatedIcon>
+                </Link>
 
-            <animated.div
-                style={{
-                    opacity: navArrow.opacity,
-                }}
-            >
-                <h4 style={{ color: coloring, marginLeft: "10px", display: "inline-flex" }}>{tooltipUp}</h4>
-            </animated.div>
-        </div> 
+                <animated.div
+                    style={{
+                        opacity: navArrow.opacity,
+                    }}
+                >
+                    <h4 style={{ color: coloring, marginLeft: "10px", display: "inline-flex" }}>{tooltipUp}</h4>
+                </animated.div>
+            </div> 
+        </div>
     )
 }
 
