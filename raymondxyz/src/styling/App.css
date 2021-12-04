@@ -65,7 +65,17 @@ h1 {
     margin-left: 10vw;
     margin-right: 10vw;
     width: 40vw;
-    padding: 15vh 0;
+    padding: 10vh 0;
+}
+
+.image_column {
+    flex: 25%;
+    overflow: hidden;
+}
+
+.collage_image {
+    width: 140px;
+    height: 140px;
 }
 
 

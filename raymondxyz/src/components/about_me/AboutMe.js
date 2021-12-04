@@ -50,6 +50,26 @@ function AboutMe({
               <h2 style={{ color: colors.white }}> Information about the sections content which continues on for 
                 a decent amount, keeps going and wraps on edge
               </h2>
+              <div style={{  display: "flex", overflow: "hidden", marginTop: "30px" }}>
+                <div style={{ flex: "100%" }}>
+                  <img src={photo} alt="test" style={{ width: "100%", height: "200px" }}></img>
+                </div>
+              </div>
+              <div style={{  display: "flex", overflow: "hidden" }}>
+                <div className="image_column">
+                  <img src={photo} alt="test" className="collage_image"></img>
+                </div>
+                <div className="image_column">
+                  <img src={photo} alt="test" className="collage_image"></img>
+                </div>
+                <div className="image_column">
+                  <img src={photo} alt="test" className="collage_image"></img>
+                </div>
+                <div className="image_column">
+                  <img src={photo} alt="test" className="collage_image"></img>
+                </div>
+              </div>
+              
             </div>
           </div>
 
