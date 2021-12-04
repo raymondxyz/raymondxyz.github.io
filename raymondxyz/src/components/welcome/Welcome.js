@@ -17,7 +17,7 @@ function Welcome({
   const bars = [];
   for (let i = 0; i < 5; i++) {
     bars.push(
-      <SpringBar barHeight="20vh" barColor={colors.blue} key={i}></SpringBar>
+      <SpringBar barHeight="20vh" barColor={colors.black} key={i}></SpringBar>
     )
   }
 
@@ -119,7 +119,7 @@ function Welcome({
       {springDone ? (
         <div
           style={{
-            backgroundColor: colors.blue,
+            backgroundColor: colors.black,
             width: "100vw",
             height: "100vh"
           }}
