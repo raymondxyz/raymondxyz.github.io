@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { colors } from "./../../styling/colors"
-import { BsArrowDownCircle } from "react-icons/bs";
+import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-scroll";
 import { useSpring, animated, config } from  "react-spring";
 
@@ -8,12 +8,14 @@ function NavArrowDown({
     scrollDestination,
     destinationName
 }) {
+
+    const AnimatedIcon = animated(IoIosArrowDown)
     const [isHover, setIsHover] = useState(false);
 
     const navArrow = useSpring({
-        size: isHover ? "100px" : "30px",
+        size: isHover ? "50px" : "30px",
         opacity: isHover? 1 : 0,
-        config: config.slow
+        config: config.stiff
     });
 
     function toggleIsHover() {
@@ -21,14 +23,7 @@ function NavArrowDown({
     }
 
     return (
-            <div>
-            <animated.div
-            style={{
-                justifyContent: "row",
-                display: "inline-flex",
-                marginTop: "60px",
-            }}
-            >
+            <div style={{ marginTop: "60px" }}>
             <Link
                 onMouseEnter={toggleIsHover}
                 onMouseLeave={toggleIsHover}
@@ -37,19 +32,16 @@ function NavArrowDown({
                 duration={500}
                 ignoreCancelEvents={false}
             >
-                <BsArrowDownCircle
-                    color={colors.white}
+                <AnimatedIcon
                     size={navArrow.size}
-                    style={{ cursor: "pointer", marginLeft: "30px", overflow: "hidden" }}
-                ></BsArrowDownCircle>
+                    style={{ color: colors.white, cursor: "pointer", marginLeft: "30px" }}
+                ></AnimatedIcon>
             </Link>
-            </animated.div><animated.div
+
+            <animated.div
                 style={{
                     justifyContent: "row",
-                    display: "inline-flex",
-                    marginTop: "60px",
                     opacity: navArrow.opacity,
-                    size: navArrow.size
                 }}
             >
                 <h4 style={{ color: colors.white, marginLeft: "20px" }}>{destinationName}</h4>
