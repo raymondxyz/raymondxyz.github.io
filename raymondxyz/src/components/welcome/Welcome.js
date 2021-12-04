@@ -4,9 +4,11 @@ import SpringBar from "./SpringBar";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import { AiOutlineMail, AiFillGithub } from "react-icons/ai";
 import { Trail, animated, config } from "react-spring";
+import NavArrowDown from "../miscellaneous/NavArrowDown";
 
 function Welcome({
-
+    scrollTo,
+    tooltip
 }) {
     const [springDone, setSpringDone] = useState(false);
 
@@ -62,6 +64,8 @@ function Welcome({
                 <h2 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Information point 2 </h2>
                 <h2 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Information point 3 </h2>
                 <h2 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Information point 4 </h2>
+
+                <NavArrowDown scrollDestination={scrollTo} destinationName={tooltip}></NavArrowDown>
 
             </div>
 

@@ -10,27 +10,41 @@ import './styling/App.css';
 function App() {
   return (
     <div>
-      <Welcome>
+      <Welcome
+        scrollTo="aboutme"
+        tooltip="About Me"
+        id="welcome"
+      >
 
       </Welcome>
 
-      <AboutMe>
+      <AboutMe
+        id="aboutme"
+      >
 
       </AboutMe>
 
-      <Skills>
+      <Skills
+        id="skills"
+      >
 
       </Skills>
 
-      <History>
+      <History
+        id="history"
+      >
 
       </History>
 
-      <Projects>
+      <Projects
+        id="projects"
+      >
 
       </Projects>
 
-      <Footer>
+      <Footer
+        id="footer"
+      >
         
       </Footer>
     </div>
