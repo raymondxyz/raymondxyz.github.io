@@ -32,7 +32,6 @@ h1 {
     margin: 0;
     width: 40vw;
     height: auto;
-    background-color: #1661BE;
     align-items: center;
     vertical-align: middle;
     overflow: hidden;
@@ -41,7 +40,6 @@ h1 {
 .aboutme_right {
     width: 60vw;
     height: 100vh;
-    background-color: white;
     align-items: center;
     vertical-align: middle;
     overflow: hidden
@@ -64,7 +62,10 @@ h1 {
 }
 
 .right_about_content {
-    margin-left: 15vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    width: 40vw;
+    padding: 15vh 0;
 }
 
 

@@ -18,7 +18,7 @@ function AboutMe({
           style={{ backgroundColor: colors.grey }}
           id={id}
         >
-          <div className="aboutme_left" style={{ color: colors.green }}>
+          <div className="aboutme_left" style={{ backgroundColor: colors.brightblue }}>
             <div style={{ marginLeft: "15vw", marginTop: "50px" }}>
               <NavArrowUp scrollUp={scrollUp} tooltipUp={tooltipUp} coloring={colors.white}></NavArrowUp>
             </div>
@@ -35,7 +35,8 @@ function AboutMe({
                 <h3
                   style={{ color: colors.white, textAlign: "center" }}
                 > Information information information information information information information information 
-                  information information information information</h3>
+                  information information information information
+                </h3>
               </div>
             </div>
 
@@ -43,8 +44,13 @@ function AboutMe({
               <NavArrowDown scrollDown={scrollDown} tooltipDown={tooltipDown} coloring={colors.white}></NavArrowDown>
             </div>
           </div>
-          <div className="aboutme_right">
-            <h1> About Me Section </h1>
+          <div className="aboutme_right" style={{ backgroundColor: colors.paleblue }}>
+            <div className="right_about_content">
+              <h1 style={{ color: colors.white }}>  Section Heading </h1>
+              <h2 style={{ color: colors.white }}> Information about the sections content which continues on for 
+                a decent amount, keeps going and wraps on edge
+              </h2>
+            </div>
           </div>
 
         </div>
