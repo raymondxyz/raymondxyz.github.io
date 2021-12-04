@@ -7,8 +7,9 @@ import { Trail, animated, config } from "react-spring";
 import NavArrowDown from "../miscellaneous/NavArrowDown";
 
 function Welcome({
-    scrollTo,
-    tooltip
+    scrollDown,
+    tooltipDown,
+    id,
 }) {
     const [springDone, setSpringDone] = useState(false);
 
@@ -24,6 +25,7 @@ function Welcome({
         <div
           className="full_section"
           style={{ backgroundColor: colors.white }}
+          id={id}
         >
             <div className="section_main_content" style={{ position:"absolute" }}>
                 <div style={{ margin: "50px 0 0 0" }}>
@@ -65,7 +67,7 @@ function Welcome({
                 <h2 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Information point 3 </h2>
                 <h2 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Information point 4 </h2>
 
-                <NavArrowDown scrollDestination={scrollTo} destinationName={tooltip}></NavArrowDown>
+                <NavArrowDown scrollDown={scrollDown} tooltipDown={tooltipDown}></NavArrowDown>
 
             </div>
 

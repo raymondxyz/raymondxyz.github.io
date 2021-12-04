@@ -5,8 +5,10 @@ import { Link } from "react-scroll";
 import { useSpring, animated, config } from  "react-spring";
 
 function NavArrowDown({ 
-    scrollDestination,
-    destinationName
+    scrollDown,
+    scrollUp,
+    tooltipDown,
+    tooltipUp,
 }) {
 
     const AnimatedIcon = animated(IoIosArrowDown)
@@ -27,10 +29,8 @@ function NavArrowDown({
             <Link
                 onMouseEnter={toggleIsHover}
                 onMouseLeave={toggleIsHover}
-                to={scrollDestination}
+                to={scrollDown}
                 smooth={true}
-                duration={500}
-                ignoreCancelEvents={false}
             >
                 <AnimatedIcon
                     size={navArrow.size}
@@ -44,7 +44,7 @@ function NavArrowDown({
                     opacity: navArrow.opacity,
                 }}
             >
-                <h4 style={{ color: colors.white, marginLeft: "20px" }}>{destinationName}</h4>
+                <h4 style={{ color: colors.white, marginLeft: "20px" }}>{tooltipDown}</h4>
             </animated.div>
         </div> 
     )

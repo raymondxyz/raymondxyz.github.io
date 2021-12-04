@@ -11,8 +11,8 @@ function App() {
   return (
     <div>
       <Welcome
-        scrollTo="aboutme"
-        tooltip="About Me"
+        scrollDown="aboutme"
+        tooltipDown="About Me"
         id="welcome"
       >
 
