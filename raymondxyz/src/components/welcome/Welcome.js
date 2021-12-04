@@ -15,9 +15,9 @@ function Welcome({
 
   // Create array for trail animation
   const bars = [];
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < 5; i++) {
     bars.push(
-      <SpringBar barWidth="16.7vw" barColor={colors.blue} key={i}></SpringBar>
+      <SpringBar barHeight="20vh" barColor={colors.blue} key={i}></SpringBar>
     )
   }
 
@@ -103,10 +103,10 @@ function Welcome({
       >
         <Trail
             items={content}
-            delay="500"
-            from={{ marginLeft: "-40vw" }}
-            to={{ marginLeft: "0" }}
-            config={config.gentle}
+            delay={700}
+            from={{ marginTop: "-30vh" }}
+            to={{ marginTop: "0" }}
+            config={{ mass: 1, tension: 110, friction: 7 }}
             keys={(item) => item.key}
           >
             {item => styles => <animated.div style={styles}>
@@ -127,11 +127,12 @@ function Welcome({
         </div>
 
       ) : (
-        <div style={{ display: "inline-flex" }}>
+        <div style={{ display: "inline" }}>
           <Trail
             items={bars}
-            from={{ marginTop: "-100vh" }}
-            to={{ marginTop: "0" }}
+            delay={200}
+            from={{ marginLeft: "-100vw" }}
+            to={{ marginLeft: "0" }}
             keys={(item) => item.key}
             config={config.slow}
             onRest={() => setTimeout(() => setSpringDone(true), 2000)}
