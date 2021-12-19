@@ -32,7 +32,7 @@ function AboutMe({
                   className="profileImage"
                 >
                 </img>
-                <div className="left_about_content">
+                <div className="left_column_content">
                   <h2 style={{ color: colors.white, textAlign: "center", marginBottom: "10px" }}> Hi There! </h2>
                   <h3
                     style={{ color: colors.white, textAlign: "center" }}
@@ -51,14 +51,14 @@ function AboutMe({
 
           <div className="main_background_right" style={{ backgroundColor: colors.paleblue }}>
           <ScrollAnimation animateIn={"animate__fadeInRight"} delay="200" duration="0.7">
-            <div className="right_about_content">
+            <div className="right_column_content">
               <h1 style={{ color: colors.white }}>  About Me </h1>
               <h2 style={{ color: colors.white }}> Information about the sections content which continues on for 
                 a decent amount, keeps going and wraps on edge
               </h2>
               <div style={{  display: "flex", overflow: "hidden", marginTop: "30px" }}>
                 <div style={{ flex: "100%" }}>
-                  <img src={photo} alt="test" style={{ width: "100%", height: "200px" }}></img>
+                  <img src={photo} alt="test" style={{ width: "100%", height: "180px" }}></img>
                 </div>
               </div>
               <div style={{  display: "flex", overflow: "hidden" }}>

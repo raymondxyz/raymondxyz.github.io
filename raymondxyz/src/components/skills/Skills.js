@@ -16,18 +16,15 @@ function Skills({
           style={{ backgroundColor: colors.blue }}
           id={id}
         >
-            <div
-              className="main_left"
-            >
-                <NavArrowUp scrollUp={scrollUp} tooltipUp={tooltipUp}></NavArrowUp>
-                    <h1> Skills Section </h1>
-                <NavArrowDown scrollDown={scrollDown} tooltipDown={tooltipDown}></NavArrowDown>
+            <div className="main_background_left">
+                <div className="left_column_content"></div>
+                    <NavArrowUp scrollUp={scrollUp} tooltipUp={tooltipUp}></NavArrowUp>
+                        <h1> Skills Section </h1>
+                    <NavArrowDown scrollDown={scrollDown} tooltipDown={tooltipDown}></NavArrowDown>
             </div>
 
-            <div
-              className="main_right"
-            >
-                
+            <div className="main_background_right">
+
             </div>
         </div>
     )
