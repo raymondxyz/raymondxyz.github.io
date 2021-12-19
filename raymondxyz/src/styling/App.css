@@ -25,10 +25,7 @@ h1 {
     overflow: hidden;
 }
 
-/**
-* About Me Containers
-**/
-.aboutme_left {
+.main_background_left {
     margin: 0;
     width: 40vw;
     height: auto;
@@ -37,7 +34,7 @@ h1 {
     overflow: hidden;
 }
 
-.aboutme_right {
+.main__background_right {
     width: 60vw;
     height: 100vh;
     align-items: center;
@@ -45,8 +42,13 @@ h1 {
     overflow: hidden
 }
 
+
+/**
+* About Me Containers
+**/
+
 .profileImage {
-    margin-left: 9.5vw;
+    margin-left: 11vw;
     border-radius: 50%;
     border: 3px white solid;
     width: 250px;
@@ -56,7 +58,7 @@ h1 {
 
 .left_about_content {
     margin-top: 10px;
-    margin-left: 9vw;
+    margin-left: 10vw;
     width: 20vw;
 
 }
@@ -77,6 +79,10 @@ h1 {
     width: 140px;
     height: 140px;
 }
+
+/** 
+* Skills Section
+**/
 
 
 /** 

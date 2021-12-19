@@ -82,13 +82,15 @@ function Welcome({
           
   content.push(
     <div
+      style={{ marginLeft: "1.5vw" }}
       key="7"
     >
       <NavArrowDown
         scrollDown={scrollDown}
         tooltipDown={tooltipDown}
         coloring={colors.white}
-      ></NavArrowDown>
+      >
+      </NavArrowDown>
     </div>
   )
 

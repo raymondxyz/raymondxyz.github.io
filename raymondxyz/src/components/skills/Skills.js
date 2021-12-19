@@ -17,11 +17,17 @@ function Skills({
           id={id}
         >
             <div
-              className="section_main_content"
+              className="main_left"
             >
                 <NavArrowUp scrollUp={scrollUp} tooltipUp={tooltipUp}></NavArrowUp>
                     <h1> Skills Section </h1>
                 <NavArrowDown scrollDown={scrollDown} tooltipDown={tooltipDown}></NavArrowDown>
+            </div>
+
+            <div
+              className="main_right"
+            >
+                
             </div>
         </div>
     )

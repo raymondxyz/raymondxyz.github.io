@@ -20,9 +20,9 @@ function AboutMe({
           id={id}
         >
 
-            <div className="aboutme_left" style={{ backgroundColor: colors.brightblue }}>
+            <div className="main_background_left" style={{ backgroundColor: colors.brightblue }}>
             <ScrollAnimation animateIn={"animate__fadeInLeft"} delay="200" duration="0.7">
-              <div style={{ marginLeft: "15vw", marginTop: "50px" }}>
+              <div style={{ marginLeft: "16.5vw", marginTop: "50px" }}>
                 <NavArrowUp scrollUp={scrollUp} tooltipUp={tooltipUp} coloring={colors.white}></NavArrowUp>
               </div>
               <div style={{ width: "40vw", height: "auto" }}>
@@ -42,17 +42,17 @@ function AboutMe({
                 </div>
               </div>
 
-              <div style={{ marginLeft: "15vw" }}>
+              <div style={{ marginLeft: "16.5vw" }}>
                 <NavArrowDown scrollDown={scrollDown} tooltipDown={tooltipDown} coloring={colors.white}></NavArrowDown>
               </div>
               </ScrollAnimation>
             </div>
 
 
-          <div className="aboutme_right" style={{ backgroundColor: colors.paleblue }}>
+          <div className="main_background_right" style={{ backgroundColor: colors.paleblue }}>
           <ScrollAnimation animateIn={"animate__fadeInRight"} delay="200" duration="0.7">
             <div className="right_about_content">
-              <h1 style={{ color: colors.white }}>  Section Heading </h1>
+              <h1 style={{ color: colors.white }}>  About Me </h1>
               <h2 style={{ color: colors.white }}> Information about the sections content which continues on for 
                 a decent amount, keeps going and wraps on edge
               </h2>
