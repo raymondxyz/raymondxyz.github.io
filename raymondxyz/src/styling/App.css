@@ -15,6 +15,7 @@ h1 {
     width: 100vw;
     height: 100vh;
     display: flex;
+    overflow: hidden;
 }
 
 .section_main_content {
@@ -26,33 +27,31 @@ h1 {
 }
 
 .main_background_left {
-    margin: 0;
     width: 40vw;
-    height: auto;
-    align-items: center;
-    vertical-align: middle;
+    height: 100vh;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .main__background_right {
     width: 60vw;
     height: 100vh;
+    overflow: hidden;
     align-items: center;
-    vertical-align: middle;
-    overflow: hidden
 }
 
 .left_column_content {
-    margin-top: 10px;
-    margin-left: 10vw;
-    width: 20vw;
+    margin: 0 10vw;
+    max-width: 20vw;
     overflow: hidden;
 }
 
 .right_column_content {
     margin-left: 10vw;
     margin-right: 10vw;
-    width: 40vw;
+    max-width: 40vw;
     padding: 10vh 0;
     overflow: hidden;
 }
@@ -62,12 +61,15 @@ h1 {
 **/
 
 .profileImage {
-    margin-left: 11vw;
     border-radius: 50%;
     border: 3px white solid;
     width: 250px;
     height: 250px;
     position: relative;
+    display: inline-flex;
+    margin-left: 1vw;
+    margin-bottom: 20px;
+    overflow: hidden;
 }
 
 .image_column {

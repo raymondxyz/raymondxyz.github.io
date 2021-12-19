@@ -22,35 +22,37 @@ function AboutMe({
 
             <div className="main_background_left" style={{ backgroundColor: colors.brightblue }}>
             <ScrollAnimation animateIn={"animate__fadeInLeft"} delay="200" duration="0.7">
+
               <div style={{ marginLeft: "16.5vw", marginTop: "50px" }}>
                 <NavArrowUp scrollUp={scrollUp} tooltipUp={tooltipUp} coloring={colors.white}></NavArrowUp>
               </div>
-              <div style={{ width: "40vw", height: "auto" }}>
+              <div className="left_column_content">
                 <img
                   src={photo}
                   alt="Profile Photo"
                   className="profileImage"
                 >
                 </img>
-                <div className="left_column_content">
-                  <h2 style={{ color: colors.white, textAlign: "center", marginBottom: "10px" }}> Hi There! </h2>
-                  <h3
-                    style={{ color: colors.white, textAlign: "center" }}
-                  > Information information information information information information information information 
-                    information information information information
-                  </h3>
-                </div>
+
+                <h2 style={{ color: colors.white, textAlign: "center", marginBottom: "10px" }}> Hi There! </h2>
+                <h3
+                  style={{ color: colors.white, textAlign: "center" }}
+                > Information information information information information information information information 
+                  information information information information
+                </h3>
               </div>
 
               <div style={{ marginLeft: "16.5vw" }}>
                 <NavArrowDown scrollDown={scrollDown} tooltipDown={tooltipDown} coloring={colors.white}></NavArrowDown>
               </div>
+
               </ScrollAnimation>
             </div>
 
 
           <div className="main_background_right" style={{ backgroundColor: colors.paleblue }}>
           <ScrollAnimation animateIn={"animate__fadeInRight"} delay="200" duration="0.7">
+
             <div className="right_column_content">
               <h1 style={{ color: colors.white }}>  About Me </h1>
               <h2 style={{ color: colors.white }}> Information about the sections content which continues on for 
@@ -61,6 +63,7 @@ function AboutMe({
                   <img src={photo} alt="test" style={{ width: "100%", height: "180px" }}></img>
                 </div>
               </div>
+
               <div style={{  display: "flex", overflow: "hidden" }}>
                 <div className="image_column">
                   <img src={photo} alt="test" className="collage_image"></img>
@@ -75,8 +78,9 @@ function AboutMe({
                   <img src={photo} alt="test" className="collage_image"></img>
                 </div>
               </div>
-              
+
             </div>
+
             </ScrollAnimation>
           </div>
 
