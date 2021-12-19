@@ -16,41 +16,36 @@ function AboutMe({
     return (
         <div 
           className="full_section"
-          style={{ backgroundColor: colors.grey }}
+          style={{ background: "linear-gradient(90deg, #2684FF 40%, #4C9AFF 40%)" }}
           id={id}
         >
-
-            <div className="main_background_left" style={{ backgroundColor: colors.brightblue }}>
-              <ScrollAnimation animateIn={"animate__fadeInLeft"} delay="200" duration="0.7">
-              
-                <div className="left_column_content">
-                  <div className="arrow_section" style={{ marginLeft: "65px", marginBottom: "-40px" }}>
-                    <NavArrowUp scrollUp={scrollUp} tooltipUp={tooltipUp} coloring={colors.white}></NavArrowUp>
-                  </div>
-
-                  <img
-                    src={photo}
-                    alt="Profile Photo"
-                    className="profileImage"
-                  >
-                  </img>
-                  <h2 style={{ color: colors.white, textAlign: "center", marginBottom: "10px" }}> Hi There! </h2>
-                  <h3
-                    style={{ color: colors.white, textAlign: "center" }}
-                  > Information information information information information information information information 
-                    information 
-                  </h3>
-
-                  <div className="arrow_section" style={{ marginLeft: "50px", marginTop: "40px" }}>
-                    <NavArrowDown scrollDown={scrollDown} tooltipDown={tooltipDown} coloring={colors.white}></NavArrowDown>
-                  </div>
-                </div>
-
-              </ScrollAnimation>
+          <div className="section_two_column">
+          <ScrollAnimation animateIn={"animate__fadeInLeft"} delay="200" duration="0.7">
+          
+            <div className="left_column_content">
+              <div className="arrow_section_up">
+                <NavArrowUp scrollUp={scrollUp} tooltipUp={tooltipUp} coloring={colors.white}></NavArrowUp>
+              </div>
+              <img
+                src={photo}
+                alt="Profile Photo"
+                className="profileImage"
+              >
+              </img>
+              <h2 style={{ color: colors.white, textAlign: "center", marginBottom: "10px" }}> Hi There! </h2>
+              <h3
+                style={{ color: colors.white, textAlign: "center" }}
+              > Information information information information information information information information 
+                information 
+              </h3>
+              <div className="arrow_section_down">
+                <NavArrowDown scrollDown={scrollDown} tooltipDown={tooltipDown} coloring={colors.white}></NavArrowDown>
+              </div>
             </div>
 
+          </ScrollAnimation>
 
-          <div className="main_background_right" style={{ backgroundColor: colors.paleblue }}>
+
           <ScrollAnimation animateIn={"animate__fadeInRight"} delay="200" duration="0.7">
 
             <div className="right_column_content">

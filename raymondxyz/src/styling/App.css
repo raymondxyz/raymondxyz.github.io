@@ -34,30 +34,18 @@ h1 {
     overflow: hidden;
 }
 
-.main_background_left {
-    width: 40vw;
-    height: 100vh;
-    overflow: hidden;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
+.section_two_column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    position: relative;
-}
-
-.main__background_right {
-    width: 60vw;
-    height: 100vh;
-    overflow: hidden;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    margin: 10vh 0;
+    overflow-y: hidden;
 }
 
 .left_column_content {
     max-width: 20vw;
+    margin-left: 10vw;
     height: auto;
     overflow: hidden;
     display: inline-flex;
@@ -67,19 +55,20 @@ h1 {
 }
 
 .right_column_content {
-    margin-left: 10vw;
-    margin-right: 10vw;
-    margin-top: 10vh;
+    margin-left: 20vw;
     height: auto;
     max-width: 40vw;
     overflow: hidden;
 }
 
-.arrow_section {
-    display: flex;
-    flex-direction: row;
-    height: 100px;
-    position: relative;
+.arrow_section_up {
+    margin-bottom: 20px;
+    margin-left: 6vw;
+}
+
+.arrow_section_down {
+    margin-top: 30px;
+    margin-left: 4vw;
 }
 
 /**
