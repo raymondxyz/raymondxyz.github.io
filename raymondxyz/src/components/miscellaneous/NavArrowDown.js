@@ -5,9 +5,7 @@ import { useSpring, animated, config } from  "react-spring";
 
 function NavArrowDown({ 
     scrollDown,
-    scrollUp,
     tooltipDown,
-    tooltipUp,
     coloring
 }) {
 
@@ -26,7 +24,7 @@ function NavArrowDown({
 
     return (
         <div style={{ display: "inline-block" }}>
-            <div style={{ marginTop: "30px", alignItems: "center", display: "inline-flex"}}>
+            <div style={{ display: "inline-flex" }}>
                 <Link
                     onMouseEnter={toggleIsHover}
                     onMouseLeave={toggleIsHover}
@@ -35,7 +33,7 @@ function NavArrowDown({
                 >
                     <AnimatedIcon
                         size={navArrow.size}
-                        style={{ color: coloring, cursor: "pointer", marginLeft: "30px", display: "inline-flex" }}
+                        style={{ color: coloring, cursor: "pointer" }}
                     ></AnimatedIcon>
                 </Link>
 
@@ -44,7 +42,7 @@ function NavArrowDown({
                         opacity: navArrow.opacity
                     }}
                 >
-                    <h4 style={{ color: coloring, marginLeft: "10px", display: "inline-flex" }}>{tooltipDown}</h4>
+                    <h4 style={{ color: coloring, marginLeft: "10px" }}>{tooltipDown}</h4>
                 </animated.div>
             </div> 
         </div>

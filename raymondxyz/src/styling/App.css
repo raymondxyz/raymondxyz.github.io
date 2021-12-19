@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+2&display=swap');
 
-* {
-    font-family: 'M PLUS 2', sans-serif;
-    overflow-x: hidden;
+html, body {
     margin: 0;
     padding: 0;
 }
 
+* {
+    font-family: 'M PLUS 2', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 h1 {
     font-size : 4em;
+    padding: 0;
+    margin: 0;
 }
 
 .full_section {
@@ -16,9 +23,10 @@ h1 {
     height: 100vh;
     display: flex;
     overflow: hidden;
+    position: relative;
 }
 
-.section_main_content {
+.landing_main_content {
     margin: 0 0 0 15vw;
     padding: 70px 0;
     width: 100vw;
@@ -30,30 +38,48 @@ h1 {
     width: 40vw;
     height: 100vh;
     overflow: hidden;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .main__background_right {
     width: 60vw;
     height: 100vh;
     overflow: hidden;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .left_column_content {
-    margin: 0 10vw;
     max-width: 20vw;
+    height: auto;
     overflow: hidden;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .right_column_content {
     margin-left: 10vw;
     margin-right: 10vw;
+    margin-top: 10vh;
+    height: auto;
     max-width: 40vw;
-    padding: 10vh 0;
     overflow: hidden;
+}
+
+.arrow_section {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    position: relative;
 }
 
 /**
@@ -65,9 +91,7 @@ h1 {
     border: 3px white solid;
     width: 250px;
     height: 250px;
-    position: relative;
-    display: inline-flex;
-    margin-left: 1vw;
+    display: flex;
     margin-bottom: 20px;
     overflow: hidden;
 }

@@ -85,12 +85,9 @@ function Welcome({
       style={{ marginLeft: "1.5vw" }}
       key="7"
     >
-      <NavArrowDown
-        scrollDown={scrollDown}
-        tooltipDown={tooltipDown}
-        coloring={colors.white}
-      >
-      </NavArrowDown>
+      <div className="arrow_section" style={{ margin: "30px" }}>
+        <NavArrowDown scrollDown={scrollDown} tooltipDown={tooltipDown} coloring={colors.white}></NavArrowDown>
+      </div>
     </div>
   )
 
@@ -100,7 +97,7 @@ function Welcome({
       id={id}
     >
       <div
-        className="section_main_content"
+        className="landing_main_content"
         style={{ position: "absolute" }}
       >
         <Trail
@@ -129,7 +126,7 @@ function Welcome({
         </div>
 
       ) : (
-        <div style={{ display: "inline" }}>
+        <div>
           <Trail
             items={bars}
             delay={200}
@@ -141,7 +138,7 @@ function Welcome({
           >
               {item => styles => <animated.div style={styles}>{item}</animated.div>}
             </Trail>
-          </div>
+        </div>
       )
       }
     </div>

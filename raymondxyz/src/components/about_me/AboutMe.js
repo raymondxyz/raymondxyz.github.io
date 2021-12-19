@@ -21,30 +21,30 @@ function AboutMe({
         >
 
             <div className="main_background_left" style={{ backgroundColor: colors.brightblue }}>
-            <ScrollAnimation animateIn={"animate__fadeInLeft"} delay="200" duration="0.7">
+              <ScrollAnimation animateIn={"animate__fadeInLeft"} delay="200" duration="0.7">
+              
+                <div className="left_column_content">
+                  <div className="arrow_section" style={{ marginLeft: "65px", marginBottom: "-40px" }}>
+                    <NavArrowUp scrollUp={scrollUp} tooltipUp={tooltipUp} coloring={colors.white}></NavArrowUp>
+                  </div>
 
-              <div style={{ marginLeft: "16.5vw", marginTop: "50px" }}>
-                <NavArrowUp scrollUp={scrollUp} tooltipUp={tooltipUp} coloring={colors.white}></NavArrowUp>
-              </div>
-              <div className="left_column_content">
-                <img
-                  src={photo}
-                  alt="Profile Photo"
-                  className="profileImage"
-                >
-                </img>
+                  <img
+                    src={photo}
+                    alt="Profile Photo"
+                    className="profileImage"
+                  >
+                  </img>
+                  <h2 style={{ color: colors.white, textAlign: "center", marginBottom: "10px" }}> Hi There! </h2>
+                  <h3
+                    style={{ color: colors.white, textAlign: "center" }}
+                  > Information information information information information information information information 
+                    information 
+                  </h3>
 
-                <h2 style={{ color: colors.white, textAlign: "center", marginBottom: "10px" }}> Hi There! </h2>
-                <h3
-                  style={{ color: colors.white, textAlign: "center" }}
-                > Information information information information information information information information 
-                  information information information information
-                </h3>
-              </div>
-
-              <div style={{ marginLeft: "16.5vw" }}>
-                <NavArrowDown scrollDown={scrollDown} tooltipDown={tooltipDown} coloring={colors.white}></NavArrowDown>
-              </div>
+                  <div className="arrow_section" style={{ marginLeft: "50px", marginTop: "40px" }}>
+                    <NavArrowDown scrollDown={scrollDown} tooltipDown={tooltipDown} coloring={colors.white}></NavArrowDown>
+                  </div>
+                </div>
 
               </ScrollAnimation>
             </div>
