@@ -8,7 +8,6 @@ html, body {
 * {
     font-family: 'M PLUS 2', sans-serif;
     margin: 0;
-    padding: 0;
     overflow-x: hidden;
 }
 
@@ -44,16 +43,16 @@ h1 {
 
 .left_column_content {
     max-width: 20vw;
-    margin-left: 10vw;
+    padding-left: 10vw;
     height: auto;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .right_column_content {
-    margin-left: 20vw;
+    padding-left: 20vw;
     height: auto;
     max-width: 40vw;
     overflow: hidden;
@@ -100,7 +99,39 @@ h1 {
 * Skills Section
 **/
 
+.skills_section_large {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 80px);
+    max-width: 40vw;
+    justify-content: center;
+    row-gap: 30px;
+    column-gap: 80px;
+}
 
+.skills_section_large .skill_icon {
+    font-size: 80px;
+}
+
+.skill_icon {
+    color: white;
+}
+
+.skill_component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+}
+
+.skill_component p {
+    color: white;
+    font-size: 0.75em;
+}
+
+.skill_component h3 {
+    color: white;
+    font-size: 1.5em;
+}
 
 
 /** 

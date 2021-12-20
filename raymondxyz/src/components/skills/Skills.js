@@ -2,6 +2,7 @@ import React from 'react';
 import { colors } from '../../styling/colors'
 import NavArrowDown from '../miscellaneous/NavArrowDown';
 import NavArrowUp from '../miscellaneous/NavArrowUp';
+import SkillsComponent from './SkillsComponent';
 
 function Skills({
     scrollDown,
@@ -33,7 +34,7 @@ function Skills({
         
                 <div className="right_column_content">
 
-                    <p> testing testing </p>
+                    <SkillsComponent currentClass="skills_section_large"></SkillsComponent>
                 </div>
             </div>
         </div>
