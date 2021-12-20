@@ -5,6 +5,7 @@ import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import { AiOutlineMail, AiFillGithub, AiOutlineBgColors } from "react-icons/ai";
 import { Trail, animated, config } from "react-spring";
 import NavArrowDown from "../miscellaneous/NavArrowDown";
+import videoSource from "./../../assets/black_video.mp4";
 
 function Welcome({
   scrollDown,
@@ -85,13 +86,14 @@ function Welcome({
       style={{ marginLeft: "1.5vw" }}
       key="7"
     >
-      <div className="arrow_section" style={{ margin: "30px" }}>
+      <div className="arrow_section" style={{ margin: "30px", marginLeft: "2.5vw" }}>
         <NavArrowDown scrollDown={scrollDown} tooltipDown={tooltipDown} coloring={colors.white}></NavArrowDown>
       </div>
     </div>
   )
 
   return (
+
     <div
       className="full_section"
       id={id}
@@ -120,9 +122,13 @@ function Welcome({
           style={{
             backgroundColor: colors.black,
             width: "100vw",
-            height: "100vh"
+            height: "100vh",
+            zIndex: "-3"
           }}
         >
+          <video className="video_background" autoPlay loop muted>
+            <source src={videoSource} type='video/mp4'></source>
+          </video>
         </div>
 
       ) : (

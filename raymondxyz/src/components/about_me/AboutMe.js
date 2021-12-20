@@ -20,7 +20,7 @@ function AboutMe({
           id={id}
         >
           <div className="section_two_column">
-          <ScrollAnimation animateIn={"animate__fadeInLeft"} delay="200" duration="0.7">
+          <ScrollAnimation animateIn={"animate__fadeInLeft"} delay="200" duration="0.7" animateOnce={true}>
           
             <div className="left_column_content">
               <div className="arrow_section_up">
@@ -46,7 +46,7 @@ function AboutMe({
           </ScrollAnimation>
 
 
-          <ScrollAnimation animateIn={"animate__fadeInRight"} delay="200" duration="0.7">
+          <ScrollAnimation animateIn={"animate__fadeInRight"} delay="200" duration="0.7" animateOnce={true}>
 
             <div className="right_column_content">
               <h1 style={{ color: colors.white }}>  About Me </h1>
