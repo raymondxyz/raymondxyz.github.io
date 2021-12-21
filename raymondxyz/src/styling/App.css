@@ -29,7 +29,6 @@ h1 {
     width: 100vw;
     height: 100vh;
     display: flex;
-    align-items: center;
     overflow-y: hidden;
 }
 
@@ -44,17 +43,19 @@ h1 {
 
 .left_column_content {
     max-width: 20vw;
+    padding: 0 10vw;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 10vw;
-    margin-right: auto;
 }
 
 .right_column_content {
-    margin-right: 10vw;
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     max-width: 40vw;
+    padding: 0 10vw; 
     overflow: hidden;
 }
 
@@ -216,6 +217,10 @@ h1 {
 	}
 }
 
+/**
+* CSS for Projects Carousel
+**/
+
 .carousel_slide {
     height: 100%;
     width: 100%;
@@ -249,8 +254,23 @@ h1 {
 }
 
 .carousel_container {
-    width: 40vw;
+    width: 60vw;
     height: 80vh;
     background-color: blue;
     overflow: hidden;
+}
+
+.carousel_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_back {
+    margin-right: 20px;
+}
+
+.button_next {
+    margin-left: 20px;
 }

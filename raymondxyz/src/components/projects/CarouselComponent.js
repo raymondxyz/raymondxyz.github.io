@@ -11,32 +11,39 @@ function CarouselComponent() {
         totalSlides={3}
         infinite={true}
       >
-        <Slider className="carousel_container">
-          <Slide index={0}>
-            <div className="carousel_slide">
-              <h1 className="slide_title"> Developets </h1>
-              <p className="slide_info"> Information information information information information </p>
-              <img src={photo} className="slide_image"></img>
-            </div>
-          </Slide>
-          <Slide index={1}>
-            <div className="carousel_slide">
-              <h1 className="slide_title"> OCR Tool </h1>
-              <p className="slide_infoS"> Information information information information information </p>
-              <img src={photo} className="slide_image"></img>
-            </div>
-          </Slide>
-          <Slide index={2}>
-            <div className="carousel_slide">
-              <h1 className="slide_title"> Something Else </h1>
-              <p className="slide_info"> Information information information information information </p>
-              <img src={photo} className="slide_image"></img>
-            </div>
-          </Slide>
+        <div className="carousel_wrapper">
 
-        </Slider>
-        <ButtonBack>Back</ButtonBack>
-        <ButtonNext>Next</ButtonNext>
+          <ButtonBack className="button_back">Back</ButtonBack>
+
+          <Slider className="carousel_container">
+
+            <Slide index={0}>
+              <div className="carousel_slide">
+                <h1 className="slide_title"> Developets </h1>
+                <p className="slide_info"> Information information information information information </p>
+                <img src={photo} className="slide_image"></img>
+              </div>
+            </Slide>
+            <Slide index={1}>
+              <div className="carousel_slide">
+                <h1 className="slide_title"> OCR Tool </h1>
+                <p className="slide_infoS"> Information information information information information </p>
+                <img src={photo} className="slide_image"></img>
+              </div>
+            </Slide>
+            <Slide index={2}>
+              <div className="carousel_slide">
+                <h1 className="slide_title"> Something Else </h1>
+                <p className="slide_info"> Information information information information information </p>
+                <img src={photo} className="slide_image"></img>
+              </div>
+            </Slide>
+
+          </Slider>
+
+          <ButtonNext className="button_next">Next</ButtonNext>
+          
+        </div>
       </CarouselProvider>
     );
 }
