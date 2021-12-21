@@ -3,6 +3,10 @@ import { colors } from '../../styling/colors'
 import NavArrowDown from '../miscellaneous/NavArrowDown';
 import NavArrowUp from '../miscellaneous/NavArrowUp';
 
+function updateSpotify() {
+
+}
+
 function Closing({
     scrollDown,
     scrollUp,
@@ -33,8 +37,10 @@ function Closing({
 
         
                 <div className="right_column_content">
-
-                   <p> testing </p>
+                    <div className="spotify_container">
+                        <iframe src="https://open.spotify.com/embed/track/6vvoQKMci0NB7Zbo10t61N" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        <button className="spotify_button" onclick={updateSpotify}>REROLL</button>
+                    </div>
                 </div>
             </div>
 

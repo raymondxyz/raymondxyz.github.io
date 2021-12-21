@@ -282,6 +282,31 @@ h1 {
 }
 
 /**
+* Spotify CSS
+**/
+
+.spotify_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    height: 80vh;
+}
+
+.spotify_button {
+    border-width: 2px;
+    padding: 5px;
+    align-self: center;
+    width: 100px;
+    border-color: white;
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/**
 * CSS for the Scrollbar
 **/
 
