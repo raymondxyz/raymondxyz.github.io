@@ -4,10 +4,9 @@ import AboutMe from './components/about_me/AboutMe';
 import Skills from './components/skills/Skills';
 import History from './components/history/History';
 import Projects from './components/projects/Projects';
+import Closing from './components/closing/Closing';
 import Footer from './components/footer/Footer';
 import './styling/App.css';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
@@ -53,10 +52,20 @@ function App() {
       <Projects
         scrollUp="history"
         tooltipUp="History"
+        scrollDown="closing"
+        tooltipDown="???"
         id="projects"
       >
 
       </Projects>
+
+      <Closing
+        scrollUp="projects"
+        toolTipUp="Projects"
+        id="closing"
+      >
+        
+      </Closing>
 
       <Footer
         id="footer"
