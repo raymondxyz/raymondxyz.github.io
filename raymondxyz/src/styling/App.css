@@ -206,10 +206,16 @@ h1 {
 
 .button_back {
     margin-right: 20px;
+    background-color: transparent;
+    opacity: 1;
+    border: 0;
 }
 
 .button_next {
     margin-left: 20px;
+    background-color: transparent;
+    opacity: 1;
+    border: 0;
 }
 
 /** 

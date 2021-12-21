@@ -1,6 +1,8 @@
 import React from "react";
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import photo from "../../assets/profile_photo.jpg";
+import { colors } from "../../styling/colors"
+import {FaAngleLeft, FaAngleRight} from "react-icons/fa";
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 function CarouselComponent() {
@@ -13,7 +15,7 @@ function CarouselComponent() {
       >
         <div className="carousel_wrapper">
 
-          <ButtonBack className="button_back">Back</ButtonBack>
+          <ButtonBack className="button_back"><FaAngleLeft size="40px" color={colors.blue}/></ButtonBack>
 
           <Slider className="carousel_container">
 
@@ -41,7 +43,7 @@ function CarouselComponent() {
 
           </Slider>
 
-          <ButtonNext className="button_next">Next</ButtonNext>
+          <ButtonNext className="button_next"><FaAngleRight size="40px" color={colors.blue}/></ButtonNext>
           
         </div>
       </CarouselProvider>
