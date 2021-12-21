@@ -3,8 +3,26 @@ import { colors } from '../../styling/colors'
 import NavArrowDown from '../miscellaneous/NavArrowDown';
 import NavArrowUp from '../miscellaneous/NavArrowUp';
 
-function updateSpotify() {
+async function updateSpotify() {
+    const playlistURL = "https://api.spotify.com/v1/playlists/3eoN9aPVkIvsqIM4B02ZCd"
 
+    try {
+        const response = await fetch(playlistURL, {
+            headers: {
+                "Authorization": "Bearer BQBoQp5YstUqpJLuVLvoZr00A8ctKX04NqEqvF12wMPDtVR-znBcEY1xh9vW6-6GY2w_6UMoN92_0e-ogzAXnUXR5pjmK2foAQDDydf1iuIWfQhTkRgJVy4ObL8hfVjev-MQf9IqWvxOtLK3j66HK98OaV-O5jQHH0s",
+                "Accept": "*/*",
+                "Content-Type": "application/x-www-form-urlencoded"
+
+            }
+        });
+        var data = await response.json();
+        console.log(data)
+        // data.forEach(item => {
+        //     console.log(item.name)
+        // })
+    } catch (err) {
+        console.log(err)
+    }
 }
 
 function Closing({
@@ -39,7 +57,7 @@ function Closing({
                 <div className="right_column_content">
                     <div className="spotify_container">
                         <iframe src="https://open.spotify.com/embed/track/6vvoQKMci0NB7Zbo10t61N" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                        <button className="spotify_button" onclick={updateSpotify}>REROLL</button>
+                        <button className="spotify_button" onClick={updateSpotify}>REROLL</button>
                     </div>
                 </div>
             </div>
