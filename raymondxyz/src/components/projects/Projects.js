@@ -2,6 +2,7 @@ import React from 'react';
 import { colors } from '../../styling/colors'
 import NavArrowDown from '../miscellaneous/NavArrowDown';
 import NavArrowUp from '../miscellaneous/NavArrowUp';
+import CarouselComponent from "./CarouselComponent";
 
 function Projects({
     scrollDown,
@@ -13,15 +14,27 @@ function Projects({
     return (
         <div
           className="full_section"
-          style={{ backgroundColor: colors.white }}
+          style={{ backgroundColor: colors.sentinel }}
           id={id}
         >
-            <div
-              className="section_main_content"
-            >
-                <NavArrowUp scrollUp={scrollUp} tooltipUp={tooltipUp}></NavArrowUp>
-                    <h1> Projects Section </h1>
-                <NavArrowDown scrollDown={scrollDown} tooltipDown={tooltipDown}></NavArrowDown>
+            <div className="section_two_column">
+                <div className="left_column_content">
+                    <div className="arrow_section_up">
+                        <NavArrowUp coloring={colors.white} scrollUp={scrollUp} tooltipUp={tooltipUp}></NavArrowUp>
+                    </div>
+                    <h1 style={{ color: colors.white, textAlign: "center" }}> Projects </h1>
+                    <h3 style={{ color: colors.white, textAlign: "center" }}> 
+                        Information information information information information information information information 
+                    </h3>
+                    <div className="arrow_section_down">
+                        <NavArrowDown coloring={colors.white} scrollDown={scrollDown} tooltipDown={tooltipDown}></NavArrowDown>
+                    </div>
+                </div>
+
+        
+                <div className="right_column_content">
+                    <CarouselComponent></CarouselComponent>                    
+                </div>
             </div>
         </div>
     )

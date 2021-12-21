@@ -16,13 +16,28 @@ function History({
           style={{ backgroundColor: colors.grey }}
           id={id}
         >
-            <div
-              className="section_main_content"
-            > 
-                <NavArrowUp scrollUp={scrollUp} tooltipUp={tooltipUp}></NavArrowUp>
-                    <h1> History Section </h1>
-                <NavArrowDown scrollDown={scrollDown} tooltipDown={tooltipDown}></NavArrowDown>
+
+            <div className="section_two_column">
+                <div className="left_column_content">
+                    <div className="arrow_section_up">
+                        <NavArrowUp coloring={colors.white} scrollUp={scrollUp} tooltipUp={tooltipUp}></NavArrowUp>
+                    </div>
+                    <h1 style={{ color: colors.white, textAlign: "center" }}> History </h1>
+                    <h3 style={{ color: colors.white, textAlign: "center" }}> 
+                        Information information information information information information information information 
+                    </h3>
+                    <div className="arrow_section_down">
+                        <NavArrowDown coloring={colors.white} scrollDown={scrollDown} tooltipDown={tooltipDown}></NavArrowDown>
+                    </div>
+                </div>
+
+        
+                <div className="right_column_content">
+
+                   <p> testing </p>
+                </div>
             </div>
+
         </div>
     )
 }

@@ -17,14 +17,6 @@ h1 {
     margin: 0;
 }
 
-.full_section {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    overflow: hidden;
-    position: relative;
-}
-
 .landing_main_content {
     margin: 0 0 0 15vw;
     padding: 70px 0;
@@ -33,27 +25,35 @@ h1 {
     overflow: hidden;
 }
 
+.full_section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+}
+
 .section_two_column {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     overflow-y: hidden;
+    width: 100vw;
 }
 
 .left_column_content {
     max-width: 20vw;
-    padding-left: 10vw;
-    height: auto;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 10vw;
+    margin-right: auto;
 }
 
 .right_column_content {
-    padding-left: 20vw;
-    height: auto;
+    margin-right: 10vw;
+    margin-left: auto;
     max-width: 40vw;
     overflow: hidden;
 }
@@ -197,8 +197,8 @@ h1 {
 
 .video_background  {
 	position: absolute;
-    min-width: 100vw;
-    min-height: 100vh;
+    width: 100vw;
+    height: 100vh;
     opacity: 1;
     z-index: -1;
 	animation-name: fadeInOpacity;
@@ -214,4 +214,43 @@ h1 {
 	100% {
 		opacity: 1;
 	}
+}
+
+.carousel_slide {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    overflow: hidden;
+} 
+
+.slide_image {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.slide_title {
+    color: blue;
+    margin-bottom: 10px;
+    overflow: hidden;
+    font-size: 2.5em;
+}
+
+.slide_info {
+    color: white;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.carousel_container {
+    width: 40vw;
+    height: 80vh;
+    background-color: blue;
+    overflow: hidden;
 }

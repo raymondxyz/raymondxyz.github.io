@@ -6,6 +6,8 @@ import History from './components/history/History';
 import Projects from './components/projects/Projects';
 import Footer from './components/footer/Footer';
 import './styling/App.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
