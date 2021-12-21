@@ -37,7 +37,6 @@ function Skills({
 
                 <ScrollAnimation animateIn={"animate__fadeInRight"} delay="200" duration="0.7" animateOnce={true}>
                     <div className="right_column_content">
-
                         <SkillsComponent currentClass="skills_section_large"></SkillsComponent>
                     </div>
                 </ScrollAnimation>

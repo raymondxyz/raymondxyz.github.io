@@ -16,7 +16,7 @@ function AboutMe({
     return (
         <div 
           className="full_section"
-          style={{ background: "linear-gradient(90deg, #2684FF 40%, #4C9AFF 40%)" }}
+          style={{ background: "linear-gradient(90deg, #2684FF 35%, #4C9AFF 35%)" }}
           id={id}
         >
           <div className="section_two_column">

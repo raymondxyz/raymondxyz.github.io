@@ -32,7 +32,7 @@ function Projects({
                 </div>
 
         
-                <div className="right_column_content">
+                <div className="project_right_column">
                     <CarouselComponent></CarouselComponent>                    
                 </div>
             </div>

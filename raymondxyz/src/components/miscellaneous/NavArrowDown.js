@@ -23,8 +23,8 @@ function NavArrowDown({
     }
 
     return (
-        <div style={{ display: "inline-block" }}>
-            <div style={{ display: "inline-flex" }}>
+        <div style={{ display: "block" }}>
+            <div style={{ display: "flex" }}>
                 <Link
                     onMouseEnter={toggleIsHover}
                     onMouseLeave={toggleIsHover}

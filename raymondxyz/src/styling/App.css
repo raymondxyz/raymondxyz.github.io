@@ -43,7 +43,8 @@ h1 {
 
 .left_column_content {
     max-width: 20vw;
-    padding: 0 10vw;
+    padding-left: 10vw;
+    padding-right: 5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,21 +55,30 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 40vw;
-    padding: 0 10vw; 
+    max-width: 42.5vw;
+    padding-right: 15vw; 
+    padding-left: 7.5vw;
     overflow: hidden;
 }
 
 .arrow_section_up {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 40px;
     margin-bottom: 20px;
-    margin-left: 5vw;
+    margin-left: 70px;
 }
 
 .arrow_section_down {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 30px;
     margin-bottom: 40px;
-    margin-left: 3.5vw;
+    margin-left: 70px;
 }
 
 /**
@@ -91,8 +101,8 @@ h1 {
 }
 
 .collage_image {
-    width: 140px;
-    height: 140px;
+    width: 160px;
+    height: 160px;
     overflow: hidden;
 }
 
@@ -103,10 +113,11 @@ h1 {
 .skills_section_large {
     display: grid;
     grid-template-columns: repeat(auto-fit, 80px);
-    max-width: 40vw;
+    max-width: 45vw;
+    min-width: 45vw;
     justify-content: center;
-    row-gap: 30px;
-    column-gap: 80px;
+    row-gap: 40px;
+    column-gap: 90px;
 }
 
 .skills_section_large .skill_icon {
@@ -134,6 +145,72 @@ h1 {
     font-size: 1.5em;
 }
 
+/**
+* CSS for Projects (Mainly Carousel)
+**/
+
+.project_right_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50vw;
+    padding-right: 5vw;
+    overflow: hidden;
+}
+
+.carousel_slide {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    overflow: hidden;
+} 
+
+.slide_image {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.slide_title {
+    color: blue;
+    margin-bottom: 10px;
+    overflow: hidden;
+    font-size: 2.5em;
+}
+
+.slide_info {
+    color: white;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.carousel_container {
+    width: 40vw;
+    height: 80vh;
+    background-color: blue;
+    overflow: hidden;
+}
+
+.carousel_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_back {
+    margin-right: 20px;
+}
+
+.button_next {
+    margin-left: 20px;
+}
 
 /** 
 * CSS for the footer component (Footer.JS)
@@ -215,62 +292,4 @@ h1 {
 	100% {
 		opacity: 1;
 	}
-}
-
-/**
-* CSS for Projects Carousel
-**/
-
-.carousel_slide {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: red;
-    overflow: hidden;
-} 
-
-.slide_image {
-    width: 250px;
-    height: 250px;
-    display: flex;
-    overflow: hidden;
-    margin: 20px 0;
-}
-
-.slide_title {
-    color: blue;
-    margin-bottom: 10px;
-    overflow: hidden;
-    font-size: 2.5em;
-}
-
-.slide_info {
-    color: white;
-    margin: 10px 0;
-    overflow: hidden;
-}
-
-.carousel_container {
-    width: 60vw;
-    height: 80vh;
-    background-color: blue;
-    overflow: hidden;
-}
-
-.carousel_wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.button_back {
-    margin-right: 20px;
-}
-
-.button_next {
-    margin-left: 20px;
 }
