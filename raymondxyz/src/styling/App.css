@@ -153,18 +153,16 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 50vw;
+    max-width: 55vw;
     padding-right: 5vw;
     overflow: hidden;
 }
 
 .carousel_slide {
-    height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: red;
     overflow: hidden;
 } 
@@ -172,7 +170,6 @@ h1 {
 .slide_image {
     width: 250px;
     height: 250px;
-    display: flex;
     overflow: hidden;
     margin: 20px 0;
 }
@@ -190,8 +187,14 @@ h1 {
     overflow: hidden;
 }
 
-.carousel_container {
-    width: 40vw;
+.carousel_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel_slider {
+    width: 45vw;
     height: 80vh;
     background-color: blue;
     overflow: hidden;
@@ -200,12 +203,30 @@ h1 {
 .carousel_wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+}
+
+.carousel_dotgroup {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: green;
+}
+
+.carousel__dot {
+    height: 15px;
+    width: 15px;
+    margin: 3px;
+    border-radius: 50%;
+    border: 1px solid green;
+}
+
+.carousel__dot--selected {
+    background-color: green;
 }
 
 .button_back {
     margin-right: 20px;
+    margin-bottom: 5vh;
     background-color: transparent;
     opacity: 1;
     border: 0;
@@ -213,6 +234,7 @@ h1 {
 
 .button_next {
     margin-left: 20px;
+    margin-bottom: 5vh;
     background-color: transparent;
     opacity: 1;
     border: 0;
