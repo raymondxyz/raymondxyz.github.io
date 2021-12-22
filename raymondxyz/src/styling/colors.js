@@ -7,7 +7,7 @@ export const colors = {
     white: "#FFFFFF",
     black: "#000000",
     grey: "#bbbbbb",
-    green: "#A0E989",
+    green: "#1DB954",
     slate: "#172B4D",
     lightslate: "#344563",
     sentinel: "#B3BAC5",
