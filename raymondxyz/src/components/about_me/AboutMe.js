@@ -2,6 +2,7 @@ import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
 import photo from "./../../assets/profile_photo.jpg";
+import collage from "./../../assets/collage.png";
 import { colors } from "../../styling/colors";
 import NavArrowDown from "../miscellaneous/NavArrowDown";
 import NavArrowUp from "../miscellaneous/NavArrowUp";
@@ -26,12 +27,7 @@ function AboutMe({
               <div className="arrow_section_up">
                 <NavArrowUp scrollUp={scrollUp} tooltipUp={tooltipUp} coloring={colors.white}></NavArrowUp>
               </div>
-              <img
-                src={photo}
-                alt="Profile Photo"
-                className="profileImage"
-              >
-              </img>
+              <img src={photo} alt="Profile Photo" className="profileImage"></img>
               <h2 style={{ color: colors.white, textAlign: "center", marginBottom: "10px" }}> Hi There! </h2>
               <h3
                 style={{ color: colors.white, textAlign: "center" }}
@@ -53,25 +49,9 @@ function AboutMe({
               <h2 style={{ color: colors.white }}> Information about the sections content which continues on for 
                 a decent amount, keeps going and wraps on edge
               </h2>
-              <div style={{  display: "flex", overflow: "hidden", marginTop: "30px" }}>
-                <div style={{ flex: "100%" }}>
-                  <img src={photo} alt="test" style={{ width: "100%", height: "180px" }}></img>
-                </div>
-              </div>
 
-              <div style={{  display: "flex", overflow: "hidden" }}>
-                <div className="image_column">
-                  <img src={photo} alt="test" className="collage_image"></img>
-                </div>
-                <div className="image_column">
-                  <img src={photo} alt="test" className="collage_image"></img>
-                </div>
-                <div className="image_column">
-                  <img src={photo} alt="test" className="collage_image"></img>
-                </div>
-                <div className="image_column">
-                  <img src={photo} alt="test" className="collage_image"></img>
-                </div>
+              <div className="collage_container">
+                <img src={collage} alt="Collage Image" className="collage_image"></img>
               </div>
 
             </div>

@@ -95,15 +95,18 @@ h1 {
     overflow: hidden;
 }
 
-.image_column {
-    flex: 25%;
-    overflow: hidden;
+.collage_container {
+    display: flex;
+    width: 42.5vw;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .collage_image {
-    width: 160px;
-    height: 160px;
-    overflow: hidden;
+    padding-top: 20px;
+    max-width: 1700px;
+    max-height: 1080px;
 }
 
 /** 
@@ -159,12 +162,15 @@ h1 {
 }
 
 .carousel_slide {
+    padding: 0 5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    background-color: red;
+    background-color: transparent;
     overflow: hidden;
+    height: 80vh;
+    width: 35vw;
+    justify-content: space-between;
 } 
 
 .slide_image {
@@ -174,16 +180,31 @@ h1 {
     margin: 20px 0;
 }
 
-.slide_title {
+.carousel_slide h1 {
     color: blue;
     margin-bottom: 10px;
     overflow: hidden;
     font-size: 2.5em;
+    text-align: center;
 }
 
-.slide_info {
+.carousel_slide p {
     color: white;
     margin: 10px 0;
+    overflow: hidden;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.carousel_slide li {
+    display: list-item;
+    list-style-type: circle;
+    margin-top: 8px;
+    color: white;
+    overflow: hidden;
+}
+
+.carousel_slide ul {
     overflow: hidden;
 }
 
@@ -191,12 +212,13 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
 }
 
 .carousel_slider {
     width: 45vw;
     height: 80vh;
-    background-color: blue;
+    background-color: transparent;
     overflow: hidden;
 }
 
@@ -209,7 +231,7 @@ h1 {
     text-align: center;
     padding-top: 5px;
     padding-bottom: 10px;
-    color: green;
+    color: #0052CC;
 }
 
 .carousel__dot {
@@ -217,11 +239,11 @@ h1 {
     width: 15px;
     margin: 3px;
     border-radius: 50%;
-    border: 1px solid green;
+    border: 1px solid #0052CC;
 }
 
 .carousel__dot--selected {
-    background-color: green;
+    background-color: #0052CC;
 }
 
 .button_back {
