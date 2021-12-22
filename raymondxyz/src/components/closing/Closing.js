@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { colors } from '../../styling/colors'
 import NavArrowDown from '../miscellaneous/NavArrowDown';
 import NavArrowUp from '../miscellaneous/NavArrowUp';
@@ -43,9 +43,9 @@ function Closing({
         setTrack({});
     }
 
-    // componentDidMount() {
-    //     updateSpotify();
-    // }
+    useEffect(() => {
+        updateSpotify();
+    }, []);
 
     return (
         <div
