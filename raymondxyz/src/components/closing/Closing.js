@@ -8,10 +8,28 @@ import data2 from "../../assets/response_offset200.json";
 import data3 from "../../assets/response_offset300.json";
 
 var spotifyIdentifier = "6vvoQKMci0NB7Zbo10t61N"
+var allIdentifiers;
+var totalTracks = 1;
 
-// function getSpotifyIDS(data, key) {
+// This function is crucial for the component to work. We need it to load the array of string IDs. We default the ID value
+// to a meenoi song in case it doesn't load before the script loads, but otherwise this will load before user clicks reroll.
+// We have not used an API (anymore) because it requires the use of authorisation (OAuth 2.0) and I don't want to
+// hardcode sensitive data into the publicly available code.
+function loadSpotifyIDS() {
 
-// }
+    const data = [data0, data1, data2, data3];
+    const identifiers = []
+    var sum = 0;
+    data.forEach( jsonFile => {
+        jsonFile.items.forEach(trackitem => {
+            identifiers.push(trackitem.track.id); 
+            sum++;
+        })
+    })
+
+    totalTracks = sum;
+    allIdentifiers = identifiers;
+}
 
 function Closing({
     scrollDown,
@@ -24,26 +42,18 @@ function Closing({
     const [track, setTrack] = useState();
 
     const updateSpotify = ()=> {
-
-        const data = [data0, data1, data2, data3];
-        const identifiers = []
-        var sum = 0;
-        data.forEach( jsonFile => {
-            jsonFile.items.forEach(trackitem => {
-                identifiers.push(trackitem.track.id); 
-                sum++;
-            })
-        })
-
-        console.log(sum);
         
-        var randomIndex = Math.round(Math.random()*sum);
-        spotifyIdentifier = identifiers[randomIndex];
-        console.log(spotifyIdentifier);
+        var randomIndex = Math.round(Math.random()*totalTracks);
+        spotifyIdentifier = allIdentifiers[randomIndex];
+
+        // Reload the component
         setTrack({});
+
     }
 
+    // On mount we want to do a load of data first (or an API call) and then update once to randomise initial song
     useEffect(() => {
+        loadSpotifyIDS();
         updateSpotify();
     }, []);
 
