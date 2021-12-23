@@ -268,41 +268,43 @@ h1 {
 **/
 
 .footer_bar {
-    margin: 0 0;
     width: 100vw;
     height: 60px;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: #1DB954;
 }
 
 .footer_content_left {
-    padding: 15px 30px;
-    /* position: absolute; */
-    left: 0;
-    display: flexbox;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: left;
     overflow: hidden;
 }
 
 .footer_link {
-    padding: 0 30px;
-    position: relative;
+    margin: 0 30px;
     display: inline-flex;
     overflow: hidden;
 }
 
 .footer_content_right {
-    margin: 15px 0;
+    height: 100%;
     font-size: 1.1em;
-    position: absolute;
-    right: 50px;
-    display: flexbox;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5vw;
     overflow: hidden;
 }
 
 .footer_icon {
     margin: 0 5px;
     vertical-align: middle;
-    /* position: relative; */
 }
 
 /**
