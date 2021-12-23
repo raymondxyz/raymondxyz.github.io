@@ -60,7 +60,7 @@ function Closing({
     return (
         <div
           className="full_section"
-          style={{ backgroundColor: colors.black }}
+          style={{ background: "linear-gradient(90deg, #000000 35%, #111111 35%)" }}
           id={id}
         >
 

@@ -13,7 +13,7 @@ function History({
     return (
         <div
           className="full_section"
-          style={{ backgroundColor: colors.grey }}
+          style={{ background: "linear-gradient(90deg, #000000 35%, #111111 35%)" }}
           id={id}
         >
 
@@ -34,7 +34,7 @@ function History({
         
                 <div className="right_column_content">
 
-                   <p> testing </p>
+                   <h1 style={{ color: "white" }}> Coming Soon </h1>
                 </div>
             </div>
 

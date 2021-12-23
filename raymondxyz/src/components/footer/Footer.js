@@ -7,10 +7,7 @@ function Footer({
 
 }) {
     return (
-        <div 
-          className="footer_bar"
-          style={{ backgroundColor: colors.green }}
-        >
+        <div className="footer_bar">
             <ul className="footer_content_left">
                     <li className="footer_link">
                         <a 

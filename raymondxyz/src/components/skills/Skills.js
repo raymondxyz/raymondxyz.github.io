@@ -16,21 +16,21 @@ function Skills({
     return (
         <div
           className="full_section"
-          style={{ backgroundColor: colors.blue }}
+          style={{ background: "linear-gradient(90deg, #ECECEC 35%, #FFFFFF 35%)" }}
           id={id}
         >
             <div className="section_two_column">
                 <ScrollAnimation animateIn={"animate__fadeInLeft"} delay="200" duration="0.7" animateOnce={true}>
                     <div className="left_column_content">
                         <div className="arrow_section_up">
-                            <NavArrowUp coloring={colors.white} scrollUp={scrollUp} tooltipUp={tooltipUp}></NavArrowUp>
+                            <NavArrowUp coloring={colors.black} scrollUp={scrollUp} tooltipUp={tooltipUp}></NavArrowUp>
                         </div>
-                        <h1 style={{ color: colors.white, textAlign: "center" }}> Skills </h1>
-                        <h3 style={{ color: colors.white, textAlign: "center" }}> 
+                        <h1 style={{ color: colors.black, textAlign: "center" }}> Skills </h1>
+                        <h3 style={{ color: colors.black, textAlign: "center" }}> 
                             Information information information information information information information information 
                         </h3>
                         <div className="arrow_section_down">
-                            <NavArrowDown coloring={colors.white} scrollDown={scrollDown} tooltipDown={tooltipDown}></NavArrowDown>
+                            <NavArrowDown coloring={colors.black} scrollDown={scrollDown} tooltipDown={tooltipDown}></NavArrowDown>
                         </div>
                     </div>
                 </ScrollAnimation>

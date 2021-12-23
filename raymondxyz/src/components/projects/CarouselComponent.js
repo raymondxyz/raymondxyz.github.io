@@ -17,7 +17,7 @@ function CarouselComponent() {
       >
         <div className="carousel_wrapper">
 
-          <ButtonBack className="button_back"><FaAngleLeft size="40px" color={colors.blue}/></ButtonBack>
+          <ButtonBack className="button_back"><FaAngleLeft size="40px" color={colors.black}/></ButtonBack>
 
           <div className="carousel_center">
             <Slider className="carousel_slider">
@@ -55,7 +55,7 @@ function CarouselComponent() {
             <DotGroup className="carousel_dotgroup"></DotGroup>
           </div>
 
-          <ButtonNext className="button_next"><FaAngleRight size="40px" color={colors.blue}/></ButtonNext>
+          <ButtonNext className="button_next"><FaAngleRight size="40px" color={colors.black}/></ButtonNext>
           
         </div>
       </CarouselProvider>
