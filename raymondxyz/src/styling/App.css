@@ -18,7 +18,7 @@ h1 {
 }
 
 .landing_main_content {
-    margin: 0 0 0 15vw;
+    margin: 0 0 0 11.5vw;
     padding: 70px 0;
     width: 100vw;
     align-items: center;
@@ -62,23 +62,23 @@ h1 {
 }
 
 .arrow_section_up {
-    width: 100px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 40px;
     margin-bottom: 20px;
-    margin-left: 70px;
+    margin-left: 170px;
 }
 
 .arrow_section_down {
-    width: 100px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 40px;
-    margin-left: 70px;
+    margin-left: 170px;
 }
 
 /**

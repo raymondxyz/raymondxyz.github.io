@@ -61,7 +61,7 @@ function App() {
 
       <Closing
         scrollUp="projects"
-        toolTipUp="Projects"
+        tooltipUp="Projects"
         id="closing"
       >
         
