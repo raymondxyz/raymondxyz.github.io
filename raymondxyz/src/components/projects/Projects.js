@@ -24,7 +24,7 @@ function Projects({
                     </div>
                     <h1 style={{ color: colors.black, textAlign: "center" }}> Projects </h1>
                     <h3 style={{ color: colors.black, textAlign: "center" }}> 
-                        Information information information information information information information information 
+                        Some personal projects I've created. Get in touch to hear about what I've worked on professionally.
                     </h3>
                     <div className="arrow_section_down">
                         <NavArrowDown coloring={colors.black} scrollDown={scrollDown} tooltipDown={tooltipDown}></NavArrowDown>

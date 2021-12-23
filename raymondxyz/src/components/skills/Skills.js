@@ -27,7 +27,7 @@ function Skills({
                         </div>
                         <h1 style={{ color: colors.black, textAlign: "center" }}> Skills </h1>
                         <h3 style={{ color: colors.black, textAlign: "center" }}> 
-                            Information information information information information information information information 
+                           Some of my technical skills, ordered by proficiency.
                         </h3>
                         <div className="arrow_section_down">
                             <NavArrowDown coloring={colors.black} scrollDown={scrollDown} tooltipDown={tooltipDown}></NavArrowDown>

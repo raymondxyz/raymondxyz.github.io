@@ -28,12 +28,29 @@ function AboutMe({
                 <NavArrowUp scrollUp={scrollUp} tooltipUp={tooltipUp} coloring={colors.white}></NavArrowUp>
               </div>
               <img src={photo} alt="Profile Photo" className="profileImage"></img>
-              <h2 style={{ color: colors.white, textAlign: "center", marginBottom: "10px" }}> Hi There! </h2>
-              <h3
-                style={{ color: colors.white, textAlign: "center" }}
-              > Information information information information information information information information 
-                information 
+              <h2 style={{ color: colors.white, textAlign: "center", marginBottom: "10px" }}> Fun Facts </h2>
+
+              <h3 style={{ color: colors.white, textAlign: "center" }}> 
+                Software Engineer.
               </h3>
+
+              <h3 style={{ color: colors.white, textAlign: "center" }}> 
+                Something Else.
+              </h3>
+
+              <h3 style={{ color: colors.white, textAlign: "center" }}> 
+                Something Else.
+              </h3>
+
+              <h3 style={{ color: colors.white, textAlign: "center" }}> 
+                Something Else.
+              </h3>
+
+              <h3 style={{ color: colors.white, textAlign: "center" }}> 
+                Last Thing
+              </h3>
+
+
               <div className="arrow_section_down">
                 <NavArrowDown scrollDown={scrollDown} tooltipDown={tooltipDown} coloring={colors.white}></NavArrowDown>
               </div>
@@ -46,8 +63,8 @@ function AboutMe({
 
             <div className="right_column_content">
               <h1 style={{ color: colors.white }}>  About Me </h1>
-              <h2 style={{ color: colors.white }}> Information about the sections content which continues on for 
-                a decent amount, keeps going and wraps on edge
+              <h2 style={{ color: colors.white }}> Current student at the University of Auckland in New Zealand. I'm passionate about business, STEM and how those two worlds collide.
+              I love good food, music, and all things automotive.
               </h2>
 
               <div className="collage_container">

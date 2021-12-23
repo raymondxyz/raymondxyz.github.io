@@ -24,7 +24,7 @@ function History({
                     </div>
                     <h1 style={{ color: colors.white, textAlign: "center" }}> History </h1>
                     <h3 style={{ color: colors.white, textAlign: "center" }}> 
-                        Information information information information information information information information 
+                        A trip down memory lane: my academic and professional progression over the years. 
                     </h3>
                     <div className="arrow_section_down">
                         <NavArrowDown coloring={colors.white} scrollDown={scrollDown} tooltipDown={tooltipDown}></NavArrowDown>
@@ -34,7 +34,7 @@ function History({
         
                 <div className="right_column_content">
 
-                   <h1 style={{ color: "white" }}> Coming Soon </h1>
+                   <h2 style={{ color: "white" }}> Haven't got around to this yet </h2>
                 </div>
             </div>
 

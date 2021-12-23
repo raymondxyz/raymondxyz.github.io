@@ -69,12 +69,11 @@ function Closing({
                     <div className="arrow_section_up">
                         <NavArrowUp coloring={colors.white} scrollUp={scrollUp} tooltipUp={tooltipUp}></NavArrowUp>
                     </div>
-                    <h1 style={{ color: colors.white, textAlign: "center" }}> Music? </h1>
+                    <h1 style={{ color: colors.white, textAlign: "center" }}> Music </h1>
                     <h3 style={{ color: colors.white, textAlign: "center" }}> 
-                        Information information information information information information information information 
+                        A bit of fun. Here's a song I've recently listened to and liked on spotify; click refresh to randomly retrieve a different song. 
                     </h3>
                     <div className="arrow_section_down">
-                        <NavArrowDown coloring={colors.white} scrollDown={scrollDown} tooltipDown={tooltipDown}></NavArrowDown>
                     </div>
                 </div>
 
@@ -82,7 +81,7 @@ function Closing({
                 <div className="right_column_content">
                     <div className="spotify_container">
                         <iframe src={"https://open.spotify.com/embed/track/"+spotifyIdentifier} width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                        <button className="spotify_button" onClick={updateSpotify}>REROLL</button>
+                        <button className="spotify_button" onClick={updateSpotify}>Refresh</button>
                     </div>
                 </div>
             </div>
