@@ -14,12 +14,12 @@ function SkillsComponent({ currentClass }) {
             <div className="skill_component">
                 <FaPython className="skill_icon"></FaPython>
                 <h3> Python </h3>
-                <p> (I miss semicolons) </p>
+                <p> () </p>
             </div>
             <div className="skill_component">
                 <FaReact className="skill_icon"></FaReact>
                 <h3> React </h3>
-                <p> (Nice?)</p>
+                <p> ()</p>
             </div>
             <div className="skill_component">
                 <FaHtml5 className="skill_icon"></FaHtml5>
@@ -29,7 +29,7 @@ function SkillsComponent({ currentClass }) {
             <div className="skill_component">
                 <FaCss3Alt className="skill_icon"></FaCss3Alt>
                 <h3> CSS </h3>
-                <p> (wizardry) </p>
+                <p> () </p>
             </div>
             <div className="skill_component">
                 <FaGitAlt className="skill_icon"></FaGitAlt>
