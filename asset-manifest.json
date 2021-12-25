@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/raymondxyz.github.io/static/css/main.ae77b357.chunk.css",
+    "main.js": "/raymondxyz.github.io/static/js/main.827b6eb5.chunk.js",
+    "main.js.map": "/raymondxyz.github.io/static/js/main.827b6eb5.chunk.js.map",
+    "runtime-main.js": "/raymondxyz.github.io/static/js/runtime-main.c131866d.js",
+    "runtime-main.js.map": "/raymondxyz.github.io/static/js/runtime-main.c131866d.js.map",
+    "static/css/2.e2027c6a.chunk.css": "/raymondxyz.github.io/static/css/2.e2027c6a.chunk.css",
+    "static/js/2.a4956ce0.chunk.js": "/raymondxyz.github.io/static/js/2.a4956ce0.chunk.js",
+    "static/js/2.a4956ce0.chunk.js.map": "/raymondxyz.github.io/static/js/2.a4956ce0.chunk.js.map",
+    "index.html": "/raymondxyz.github.io/index.html",
+    "precache-manifest.a069c0be67500b1a10cfbd09f5ce1b4b.js": "/raymondxyz.github.io/precache-manifest.a069c0be67500b1a10cfbd09f5ce1b4b.js",
+    "service-worker.js": "/raymondxyz.github.io/service-worker.js",
+    "static/css/2.e2027c6a.chunk.css.map": "/raymondxyz.github.io/static/css/2.e2027c6a.chunk.css.map",
+    "static/css/main.ae77b357.chunk.css.map": "/raymondxyz.github.io/static/css/main.ae77b357.chunk.css.map",
+    "static/js/2.a4956ce0.chunk.js.LICENSE.txt": "/raymondxyz.github.io/static/js/2.a4956ce0.chunk.js.LICENSE.txt",
+    "static/media/black_video.mp4": "/raymondxyz.github.io/static/media/black_video.df33fee1.mp4",
+    "static/media/collage.png": "/raymondxyz.github.io/static/media/collage.049969fb.png",
+    "static/media/profile_photo.jpg": "/raymondxyz.github.io/static/media/profile_photo.d22c0879.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c131866d.js",
+    "static/css/2.e2027c6a.chunk.css",
+    "static/js/2.a4956ce0.chunk.js",
+    "static/css/main.ae77b357.chunk.css",
+    "static/js/main.827b6eb5.chunk.js"
+  ]
+}
