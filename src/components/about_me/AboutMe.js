@@ -35,19 +35,19 @@ function AboutMe({
               </h3>
 
               <h3 style={{ color: colors.white, textAlign: "center" }}> 
-                Basketball <span style={{ color: colors.green }}>&</span> Running
+                Basketball & Running
               </h3>
 
               <h3 style={{ color: colors.white, textAlign: "center" }}> 
-                Netflix <span style={{ color: colors.green }}>&</span> Asian Dramas
+                Netflix & Asian Dramas
               </h3>
 
               <h3 style={{ color: colors.white, textAlign: "center" }}> 
-                Baking <span style={{ color: colors.green }}>&</span> Eating Out
+                Baking & Eating Out
               </h3>
 
               <h3 style={{ color: colors.white, textAlign: "center" }}> 
-                Video Games <span style={{ color: colors.green }}>&</span> Music
+                Video Games & Music
               </h3>
 
 
