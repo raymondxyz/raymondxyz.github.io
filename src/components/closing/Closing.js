@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { colors } from '../../styling/colors'
-import NavArrowDown from '../miscellaneous/NavArrowDown';
 import NavArrowUp from '../miscellaneous/NavArrowUp';
 import data0 from "../../assets/response_offset0.json";
 import data1 from "../../assets/response_offset100.json";

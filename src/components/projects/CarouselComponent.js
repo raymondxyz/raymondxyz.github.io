@@ -31,7 +31,7 @@ function CarouselComponent() {
                     <li>Best Technical Implementation</li>
                     <li>Special Sponsor Prize (integrating NFT & Blockchain technology)</li>
                   </ul>
-                  <img src={photo} className="slide_image"></img>
+                  <img src={photo} alt="menu screen for developets" className="slide_image"></img>
                 </div>
               </Slide>
               <Slide index={1}>
@@ -40,14 +40,14 @@ function CarouselComponent() {
                   <p> Python based program to assist with scanning documents in various visual formats, to then scan and recognise characters in tabular format, then pipe to excel.
                     Primarily used for efficiently extracting business data to feed financial models built in excel.
                   </p>
-                  <img src={photo} className="slide_image"></img>
+                  <img src={photo} alt="various demonstrations and excel files" className="slide_image"></img>
                 </div>
               </Slide>
               <Slide index={2}>
                 <div className="carousel_slide">
                   <h1> Kemu Kupu </h1>
                   <p> Java & Bash based educational platform based on a quiz-format to promote learning of the native maori language amongst young New Zealand children. </p>
-                  <img src={photo} className="slide_image"></img>
+                  <img src={photo} alt="educational quiz platform demonstration" className="slide_image"></img>
                 </div>
               </Slide>
             </Slider>

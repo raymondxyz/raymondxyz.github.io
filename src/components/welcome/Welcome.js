@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import { colors } from "../../styling/colors";
 import SpringBar from "./SpringBar";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
-import { AiOutlineMail, AiFillGithub, AiOutlineBgColors } from "react-icons/ai";
+import { AiOutlineMail, AiFillGithub } from "react-icons/ai";
 import { Trail, animated, config } from "react-spring";
 import NavArrowDown from "../miscellaneous/NavArrowDown";
-import videoSource from "./../../assets/black_video.mp4";
 
 function Welcome({
   scrollDown,
@@ -126,9 +125,7 @@ function Welcome({
             zIndex: "-3"
           }}
         >
-          <video className="video_background" autoPlay loop muted>
-            <source src={videoSource} type='video/mp4'></source>
-          </video>
+          
         </div>
 
       ) : (
