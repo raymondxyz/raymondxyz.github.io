@@ -1,7 +1,12 @@
 import React from "react";
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, DotGroup } from 'pure-react-carousel';
-import photo from "../../assets/profile_photo.jpg";
-import { colors } from "../../styling/colors"
+import Developets from "../../assets/developets.png";
+import Kemukupu from "../../assets/kemukupu.png";
+import Houghlines from "../../assets/houghlines.png";
+import Ocroutput from "../../assets/ocroutput.png";
+import QualtricsPull from "../../assets/qualtricsPull.png";
+import PullOutput from "../../assets/pullOutput.png";
+import { colors } from "../../styling/colors";
 import {FaAngleLeft, FaAngleRight} from "react-icons/fa";
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
@@ -10,7 +15,7 @@ function CarouselComponent() {
       <CarouselProvider
         naturalSlideWidth={60}
         naturalSlideHeight={80}
-        totalSlides={3}
+        totalSlides={4}
         infinite={true}
         isPlaying={true}
         interval={7000}
@@ -31,7 +36,7 @@ function CarouselComponent() {
                     <li>Best Technical Implementation</li>
                     <li>Special Sponsor Prize (integrating NFT & Blockchain technology)</li>
                   </ul>
-                  <img src={photo} alt="menu screen for developets" className="slide_image"></img>
+                  <img src={Developets} alt="menu screen for developets" className="slide_image"></img>
                 </div>
               </Slide>
               <Slide index={1}>
@@ -40,14 +45,27 @@ function CarouselComponent() {
                   <p> Python based program to assist with scanning documents in various visual formats, to then scan and recognise characters in tabular format, then pipe to excel.
                     Primarily used for efficiently extracting business data to feed financial models built in excel.
                   </p>
-                  <img src={photo} alt="various demonstrations and excel files" className="slide_image"></img>
+                  <div className="slide_two_image">
+                    <img src={Houghlines} alt="tabular date surrounded by coloured lines" className="slide_image"></img>
+                    <img src={Ocroutput} alt="exemplar excel file" className="slide_image"></img>
+                  </div>
                 </div>
               </Slide>
               <Slide index={2}>
                 <div className="carousel_slide">
                   <h1> Kemu Kupu </h1>
                   <p> Java & Bash based educational platform based on a quiz-format to promote learning of the native maori language amongst young New Zealand children. </p>
-                  <img src={photo} alt="educational quiz platform demonstration" className="slide_image"></img>
+                  <img src={Kemukupu} alt="educational quiz platform demonstration" className="slide_image"></img>
+                </div>
+              </Slide>
+              <Slide index={3}>
+                <div className="carousel_slide">
+                  <h1> Data Webscraper </h1>
+                  <p> Python based webscraper, used to access HTML and to extract all data fields of objects from a Qualtrics dashboard (as such data is otherwise not easily accesible). Allows for automated reporting and tracking of Qualtrics dashboard data. </p>
+                  <div className="slide_two_image">
+                    <img src={QualtricsPull} alt="snippet of code" className="slide_image"></img>
+                    <img src={PullOutput} alt="column of excel data" className="slide_image"></img>
+                  </div>
                 </div>
               </Slide>
             </Slider>
