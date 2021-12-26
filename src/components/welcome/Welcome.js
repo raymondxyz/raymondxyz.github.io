@@ -5,6 +5,7 @@ import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import { AiOutlineMail, AiFillGithub } from "react-icons/ai";
 import { Trail, animated, config } from "react-spring";
 import NavArrowDown from "../miscellaneous/NavArrowDown";
+import ParticleBackground from "./ParticleBackground";
 
 function Welcome({
   scrollDown,
@@ -125,7 +126,7 @@ function Welcome({
             zIndex: "-3"
           }}
         >
-          
+          <ParticleBackground></ParticleBackground>
         </div>
 
       ) : (
