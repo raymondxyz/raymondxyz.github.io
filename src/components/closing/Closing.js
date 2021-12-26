@@ -71,9 +71,9 @@ function Closing({
                         <div className="arrow_section_up">
                             <NavArrowUp coloring={colors.white} scrollUp={scrollUp} tooltipUp={tooltipUp}></NavArrowUp>
                         </div>
-                        <h1 style={{ color: colors.white, textAlign: "center" }}> Bored? </h1>
+                        <h1 style={{ color: colors.green, textAlign: "center" }}> Bored? </h1>
                         <h3 style={{ color: colors.white, textAlign: "center" }}> 
-                            A bit of fun. Explore the songs I've recently listened to and liked on spotify; click refresh to randomly retrieve a different song. 
+                            Just for fun: explore the songs I've recently listened to and liked on spotify. Click refresh to randomly retrieve a different song. 
                         </h3>
                         <div className="arrow_section_down">
                         </div>

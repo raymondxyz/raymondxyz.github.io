@@ -42,7 +42,7 @@ function CarouselComponent() {
               <Slide index={1}>
                 <div className="carousel_slide">
                   <h1> Optical Character Recognition Tool </h1>
-                  <p> Python based program to assist with scanning documents in various visual formats, to then scan and recognise characters in tabular format, then pipe to excel.
+                  <p> Python based program to assist with scanning documents in various file formats, to then recognise characters which are laid out in a tabular format, whic are then extracte and piped to excel.
                     Primarily used for efficiently extracting business data to feed financial models built in excel.
                   </p>
                   <div className="slide_two_image">

@@ -17,11 +17,12 @@ h1 {
     margin: 0;
 }
 
-.landing_main_content {
-    margin: 0 0 0 11.5vw;
+.welcome_content {
+    margin: 0 0 0 12.5vw;
     padding: 70px 0;
     width: 100vw;
     align-items: center;
+    justify-content: center;
     overflow: hidden;
 }
 
@@ -360,7 +361,6 @@ h1 {
 }
 
 .particle_background  {
-	position: absolute;
     opacity: 1;
     z-index: -1;
 	animation-name: fadeInOpacity;

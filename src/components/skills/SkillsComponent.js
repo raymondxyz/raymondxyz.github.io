@@ -17,9 +17,9 @@ function SkillsComponent({ currentClass }) {
                 <p> () </p>
             </div>
             <div className="skill_component">
-                <FaReact className="skill_icon"></FaReact>
-                <h3> React </h3>
-                <p> ()</p>
+                <SiCplusplus className="skill_icon"></SiCplusplus>
+                <h3> C </h3>
+                <p> () </p>
             </div>
             <div className="skill_component">
                 <FaHtml5 className="skill_icon"></FaHtml5>
@@ -37,13 +37,13 @@ function SkillsComponent({ currentClass }) {
                 <p> () </p>
             </div>
             <div className="skill_component">
-                <FaJsSquare className="skill_icon"></FaJsSquare>
-                <h3> JavaScript </h3>
-                <p> () </p>
+                <FaReact className="skill_icon"></FaReact>
+                <h3> React </h3>
+                <p> ()</p>
             </div>
             <div className="skill_component">
-                <SiCplusplus className="skill_icon"></SiCplusplus>
-                <h3> C </h3>
+                <FaJsSquare className="skill_icon"></FaJsSquare>
+                <h3> JavaScript </h3>
                 <p> () </p>
             </div>
             <div className="skill_component">

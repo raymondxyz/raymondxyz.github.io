@@ -25,7 +25,7 @@ function Skills({
                         <div className="arrow_section_up">
                             <NavArrowUp coloring={colors.black} scrollUp={scrollUp} tooltipUp={tooltipUp}></NavArrowUp>
                         </div>
-                        <h1 style={{ color: colors.black, textAlign: "center" }}> Skills </h1>
+                        <h1 style={{ color: colors.green, textAlign: "center" }}> Skills </h1>
                         <h3 style={{ color: colors.black, textAlign: "center" }}> 
                            Some of my technical skills, ordered by proficiency.
                         </h3>

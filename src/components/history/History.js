@@ -25,7 +25,7 @@ function History({
                         <div className="arrow_section_up">
                             <NavArrowUp coloring={colors.white} scrollUp={scrollUp} tooltipUp={tooltipUp}></NavArrowUp>
                         </div>
-                        <h1 style={{ color: colors.white, textAlign: "center" }}> History </h1>
+                        <h1 style={{ color: colors.green, textAlign: "center" }}> History </h1>
                         <h3 style={{ color: colors.white, textAlign: "center" }}> 
                             A trip down memory lane: my academic and professional progression over the years. 
                         </h3>

@@ -67,7 +67,7 @@ function Welcome({
   )
 
   content.push(
-    <h1 style={{ color: colors.white }} key="5">Welcome!</h1>
+    <h1 style={{ color: colors.green }} key="5">Welcome!</h1>
   )
 
   content.push(
@@ -77,7 +77,8 @@ function Welcome({
       <h2 style={{ color: colors.white, paddingTop: "20px", fontSize: "2rem" }}> Raymond Zhang </h2>
       <h3 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Penultimate Software Engineering Student </h3>
       <h3 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Based in Auckland, New Zealand </h3>
-      <h3 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Learn about me </h3>
+      <h3 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Still don't know how to exit vim </h3>
+      <h3 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Click the background or click below </h3>
     </div>
   )
           
@@ -87,7 +88,7 @@ function Welcome({
       key="7"
     >
       <div className="arrow_section" style={{ margin: "30px", marginLeft: "2.5vw" }}>
-        <NavArrowDown scrollDown={scrollDown} tooltipDown={tooltipDown} coloring={colors.white}></NavArrowDown>
+        <NavArrowDown scrollDown={scrollDown} tooltipDown={tooltipDown} coloring={colors.green}></NavArrowDown>
       </div>
     </div>
   )
@@ -99,7 +100,7 @@ function Welcome({
       id={id}
     >
       <div
-        className="landing_main_content"
+        className="welcome_content"
         style={{ position: "absolute" }}
       >
         <Trail

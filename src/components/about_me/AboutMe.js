@@ -28,26 +28,26 @@ function AboutMe({
                 <NavArrowUp scrollUp={scrollUp} tooltipUp={tooltipUp} coloring={colors.white}></NavArrowUp>
               </div>
               <img src={photo} alt="Profile Photo" className="profileImage"></img>
-              <h2 style={{ color: colors.white, textAlign: "center", marginBottom: "10px" }}> Fun Facts </h2>
+              <h2 style={{ color: colors.green, textAlign: "center", marginBottom: "10px" }}> My Hobbies </h2>
 
               <h3 style={{ color: colors.white, textAlign: "center" }}> 
-                Software Engineer.
+                All Things Automotive
               </h3>
 
               <h3 style={{ color: colors.white, textAlign: "center" }}> 
-                Something Else.
+                Basketball <span style={{ color: colors.green }}>&</span> Running
               </h3>
 
               <h3 style={{ color: colors.white, textAlign: "center" }}> 
-                Something Else.
+                Netflix <span style={{ color: colors.green }}>&</span> Asian Dramas
               </h3>
 
               <h3 style={{ color: colors.white, textAlign: "center" }}> 
-                Something Else.
+                Baking <span style={{ color: colors.green }}>&</span> Eating Out
               </h3>
 
               <h3 style={{ color: colors.white, textAlign: "center" }}> 
-                Last Thing
+                Video Games <span style={{ color: colors.green }}>&</span> Music
               </h3>
 
 
@@ -62,9 +62,9 @@ function AboutMe({
           <ScrollAnimation animateIn={"animate__fadeInRight"} delay="200" duration="0.7" animateOnce={true}>
 
             <div className="right_column_content">
-              <h1 style={{ color: colors.white }}>  About Me </h1>
-              <h2 style={{ color: colors.white }}> Current student at the University of Auckland in New Zealand. I'm passionate about business, STEM and how those two worlds collide.
-              I love good food, music, and all things automotive.
+              <h1 style={{ color: colors.green }}>  About Me </h1>
+              <h2 style={{ color: colors.white }}> Current student at the University of Auckland. I'm passionate about STEM, business and how those two worlds collide.
+              Excited about tech and it's role in solving the big problems across all industries.
               </h2>
 
               <div className="collage_container">

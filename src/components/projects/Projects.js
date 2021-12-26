@@ -25,7 +25,7 @@ function Projects({
                         <div className="arrow_section_up">
                             <NavArrowUp coloring={colors.black} scrollUp={scrollUp} tooltipUp={tooltipUp}></NavArrowUp>
                         </div>
-                        <h1 style={{ color: colors.black, textAlign: "center" }}> Projects </h1>
+                        <h1 style={{ color: colors.green, textAlign: "center" }}> Projects </h1>
                         <h3 style={{ color: colors.black, textAlign: "center" }}> 
                             Some personal projects I've created. Get in touch to hear about what I've worked on professionally.
                         </h3>
