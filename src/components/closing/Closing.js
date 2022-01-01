@@ -60,14 +60,13 @@ function Closing({
     return (
         <div
           className="full_section"
-          style={{ background: "linear-gradient(90deg, #000000 35%, #111111 35%)" }}
           id={id}
         >
 
             <div className="section_two_column">
 
                 <ScrollAnimation animateIn={"animate__zoomIn"} delay="200" duration="0.7" animateOnce={true}>
-                    <div className="left_column_content">
+                    <div className="left_column_content" style={{ backgroundColor: "#000000" }}>
                         <div className="arrow_section_up">
                             <NavArrowUp coloring={colors.white} scrollUp={scrollUp} tooltipUp={tooltipUp}></NavArrowUp>
                         </div>
@@ -81,7 +80,7 @@ function Closing({
                 </ScrollAnimation>
 
                 <ScrollAnimation animateIn={"animate__zoomIn"} delay="200" duration="0.7" animateOnce={true}>
-                    <div className="right_column_content">
+                    <div className="right_column_content" style={{ backgroundColor: "#111111" }}>
                         <div className="spotify_container">
                             <iframe src={"https://open.spotify.com/embed/track/"+spotifyIdentifier} width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                             <button className="spotify_button" onClick={updateSpotify}>Refresh</button>

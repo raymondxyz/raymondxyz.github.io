@@ -17,13 +17,12 @@ function AboutMe({
     return (
         <div 
           className="full_section"
-          style={{ background: "linear-gradient(90deg, #000000 35%, #111111 35%)" }}
           id={id}
         >
           <div className="section_two_column">
           <ScrollAnimation animateIn={"animate__fadeInLeft"} delay="200" duration="0.7" animateOnce={true}>
           
-            <div className="left_column_content">
+            <div className="left_column_content" style={{ backgroundColor: "#000000" }}>
               <div className="arrow_section_up">
                 <NavArrowUp scrollUp={scrollUp} tooltipUp={tooltipUp} coloring={colors.white}></NavArrowUp>
               </div>
@@ -61,7 +60,7 @@ function AboutMe({
 
           <ScrollAnimation animateIn={"animate__fadeInRight"} delay="200" duration="0.7" animateOnce={true}>
 
-            <div className="right_column_content">
+            <div className="right_column_content" style={{ backgroundColor: "#111111" }}>
               <h1 style={{ color: colors.green }}>  About Me </h1>
               <h2 style={{ color: colors.white }}> Current student at the University of Auckland. I'm passionate about STEM, business and how those two worlds collide.
               Excited about tech and it's role in solving the big problems across all industries.

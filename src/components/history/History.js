@@ -14,14 +14,13 @@ function History({
     return (
         <div
           className="full_section"
-          style={{ background: "linear-gradient(90deg, #000000 35%, #111111 35%)" }}
           id={id}
         >
 
             <div className="section_two_column">
 
                 <ScrollAnimation animateIn={"animate__fadeInLeft"} delay="200" duration="0.7" animateOnce={true}>
-                    <div className="left_column_content">
+                    <div className="left_column_content" style={{ backgroundColor: "#000000" }}>
                         <div className="arrow_section_up">
                             <NavArrowUp coloring={colors.white} scrollUp={scrollUp} tooltipUp={tooltipUp}></NavArrowUp>
                         </div>
@@ -36,9 +35,10 @@ function History({
                 </ScrollAnimation>
 
                 <ScrollAnimation animateIn={"animate__fadeInRight"} delay="200" duration="0.7" animateOnce={true}>
-                    <div className="right_column_content">
+                    <div className="right_column_content" style={{ backgroundColor: "#111111" }}>
 
-                    <h2 style={{ color: "white" }}> Haven't got around to this yet </h2>
+                        <h2 style={{ color: "white" }}> Haven't got around to this yet </h2>
+                        
                     </div>
                 </ScrollAnimation>
             </div>

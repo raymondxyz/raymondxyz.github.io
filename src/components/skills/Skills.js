@@ -16,12 +16,11 @@ function Skills({
     return (
         <div
           className="full_section"
-          style={{ background: "linear-gradient(90deg, #ECECEC 35%, #FFFFFF 35%)" }}
           id={id}
         >
             <div className="section_two_column">
                 <ScrollAnimation animateIn={"animate__fadeInLeft"} delay="200" duration="0.7" animateOnce={true}>
-                    <div className="left_column_content">
+                    <div className="left_column_content" style={{ backgroundColor: "#ECECEC" }}>
                         <div className="arrow_section_up">
                             <NavArrowUp coloring={colors.black} scrollUp={scrollUp} tooltipUp={tooltipUp}></NavArrowUp>
                         </div>
@@ -36,7 +35,7 @@ function Skills({
                 </ScrollAnimation>
 
                 <ScrollAnimation animateIn={"animate__fadeInRight"} delay="200" duration="0.7" animateOnce={true}>
-                    <div className="right_column_content">
+                    <div className="right_column_content" style={{ backgroundColor: "#FFFFFF" }}>
                         <SkillsComponent currentClass="skills_section_large"></SkillsComponent>
                     </div>
                 </ScrollAnimation>
