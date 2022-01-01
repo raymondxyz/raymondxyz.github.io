@@ -77,7 +77,7 @@ function Welcome({
       <h2 style={{ color: colors.white, paddingTop: "20px", fontSize: "2rem" }}> Raymond Zhang </h2>
       <h3 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Penultimate Software Engineering Student </h3>
       <h3 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Based in Auckland, New Zealand </h3>
-      <h3 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Still don't know how to exit vim </h3>
+      <h3 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Stuck in vim since 2020 </h3>
       <h3 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Click the background or click below </h3>
     </div>
   )

@@ -85,7 +85,7 @@ function ParticleBackground({
                     enable: true,
                     area: 800,
                     },
-                    value: 60,
+                    value: 90,
                 },
                 opacity: {
                     value: 0.5,
