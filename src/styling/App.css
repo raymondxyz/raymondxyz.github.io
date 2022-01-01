@@ -351,7 +351,7 @@ h1 {
 * CSS for the Scrollbar
 **/
 
-@media screen and (min-width: 800px) {
+@media screen {
     
     ::-webkit-scrollbar {
         width: 0.5vw;
@@ -395,6 +395,10 @@ h1 {
 
 @media only screen and (max-width: 800px) {
 
+    html, body {
+        overflow-x: hidden;
+    }
+
     h1 {
         font-size: 48px;
     }
@@ -428,7 +432,6 @@ h1 {
         width: 80vw;
         height: 80vh;
         padding: 10vh 10vw;
-
     }
 
     .right_column_content {
@@ -447,6 +450,11 @@ h1 {
     
     .right_column_content h2 {
         font-size: 16px;
+    }
+
+    .profileImage {
+        width: 200px;
+        height: 200px;
     }
 
     .collage_container {
@@ -490,7 +498,8 @@ h1 {
     }
 
     .carousel_slider {
-        width: 110vw;
+        width: 150vw;
+        overflow-x: hidden;
     }
 
     .carousel_slide {
