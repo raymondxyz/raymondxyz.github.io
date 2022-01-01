@@ -43,13 +43,14 @@ h1 {
 }
 
 .left_column_content {
-    max-width: 20vw;
+    width: 20vw;
     padding-left: 7.5vw;
     padding-right: 7.5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    justify-self: center;
     height: 100vh;
 }
 
@@ -57,6 +58,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    justify-self: center;
     width: 42.5vw;
     padding-right: 15vw; 
     padding-left: 7.5vw;
@@ -116,7 +118,7 @@ h1 {
 * Skills Section
 **/
 
-.skills_section_large {
+.skills_section {
     display: grid;
     grid-template-columns: repeat(auto-fit, 80px);
     max-width: 45vw;
@@ -126,7 +128,7 @@ h1 {
     column-gap: 90px;
 }
 
-.skills_section_large .skill_icon {
+.skills_section .skill_icon {
     font-size: 80px;
 }
 
@@ -136,6 +138,7 @@ h1 {
 
 .skill_component {
     display: flex;
+    width: 120px;
     flex-direction: column;
     align-items: center;
     overflow: visible;
@@ -224,6 +227,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
     overflow: hidden;
 }
 
@@ -347,20 +351,24 @@ h1 {
 * CSS for the Scrollbar
 **/
 
-::-webkit-scrollbar {
-    width: 0.5vw;
-}
+@media screen and (min-width: 800px) {
+    
+    ::-webkit-scrollbar {
+        width: 0.5vw;
+    }
 
-::-webkit-scrollbar-thumb {
-    background-color: white;
-}
+    ::-webkit-scrollbar-thumb {
+        background-color: white;
+    }
 
-::-webkit-scrollbar-thumb:hover {
-    background-color: #bbbbbb;
-}
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #bbbbbb;
+    }
 
-::-webkit-scrollbar-track {
-    background-color: black;
+    ::-webkit-scrollbar-track {
+        background-color: black;
+    }
+
 }
 
 .particle_background  {
@@ -386,25 +394,143 @@ h1 {
 **/
 
 @media only screen and (max-width: 800px) {
+
     h1 {
-        font-size: 3em;
+        font-size: 48px;
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size: 24px;
     }
 
     h3 {
-        font-size: 1em;
+        font-size: 16px;
     }
 
     .full_section {
         justify-content: center;
+        width: 100vw;
+        height: 200vh;
     }
 
     .section_two_column {
         display: flex;
         flex-direction: column;
+        width: 100vw;
+        height: 200vh;
+    }
+
+    .animated {
+        width: 100vw;
+    }
+
+    .left_column_content {
+        width: 80vw;
+        height: 80vh;
+        padding: 10vh 10vw;
+
+    }
+
+    .right_column_content {
+        width: 80vw;
+        height: 80vh;
+        display: flex;
+        padding: 10vh 10vw;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .right_column_content h1 {
+        font-size: 48px;
+    }
+    
+    .right_column_content h2 {
+        font-size: 16px;
+    }
+
+    .collage_container {
+        width: 75vw;
+    }
+
+    .skills_section {
+        align-self: center;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 60px);
+        width: 100%;
+        justify-content: center;
+        row-gap: 20px;
+        column-gap: 40px;
+        overflow: hidden;
+    }
+
+    .skills_section .skill_icon {
+        font-size: 60px;
+    }
+
+    .skill_component {
+        width: 60px;
+    }
+
+    .skill_component p {
+        color: black;
+        font-size: 6px;
+    }
+    
+    .skill_component h3 {
+        color: black;
+        font-size: 13px;
+    }
+
+    .project_right_column {
+        width: 100vw;
+        height: 90vh;
+        padding: 0;
+    }
+
+    .carousel_slider {
+        width: 110vw;
+    }
+
+    .carousel_slide {
+        width: 70vw;
+        padding: 0;
+    }
+
+    .carousel_slide h1 {
+        font-size: 32px;
+    }
+    
+    .carousel_slide p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .carousel_slide li {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .button_next {
+        margin-left: 0;
+    }
+
+    .carousel__dot {
+        height: 10px;
+        width: 10px;
+        font-size: 4px;
+    }
+
+    .carousel_dotgroup {
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        color: black;
+    }
+
+    .spotify_container {
+        width: 80vw;
     }
 
 }

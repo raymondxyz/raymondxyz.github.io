@@ -97,6 +97,7 @@ function Welcome({
 
     <div
       className="full_section"
+      style={{ height: "100vh", width: "100vw" }}
       id={id}
     >
       <div

@@ -3,9 +3,9 @@ import {FaReact, FaJava, FaPython, FaHtml5, FaCss3Alt, FaGitAlt, FaJsSquare} fro
 import {SiCplusplus, SiGnubash} from "react-icons/si";
 
 
-function SkillsComponent({ currentClass }) {
+function SkillsComponent() {
     return (
-        <div className={currentClass}>
+        <div className="skills_section">
              <div className="skill_component">
                 <FaJava className="skill_icon"></FaJava>
                 <h3> Java </h3>
