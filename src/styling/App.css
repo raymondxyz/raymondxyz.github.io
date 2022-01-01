@@ -533,4 +533,23 @@ h1 {
         width: 80vw;
     }
 
+    .footer_bar {
+        height: 50px;
+    }
+    
+    .footer_content_left {
+        height: 100%;
+        width: 80vw;
+        margin-left: -20px;
+    }
+    
+    .footer_link {
+        margin-right: 5px;
+    }
+    
+    .footer_content_right {
+        display: none;
+    }
+    
+
 }
