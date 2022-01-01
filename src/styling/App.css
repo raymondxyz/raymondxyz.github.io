@@ -18,9 +18,9 @@ h1 {
 }
 
 .welcome_content {
-    margin: 0 0 0 12.5vw;
+    margin: 0 5vw 0 12.5vw;
     padding: 70px 0;
-    width: 100vw;
+    width: 82.5vw;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -376,4 +376,22 @@ h1 {
 	100% {
 		opacity: 1;
 	}
+}
+
+/**
+* Resizing CSS for mobile screens
+**/
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
 }

@@ -74,7 +74,7 @@ function Welcome({
     <div
       key="6"
     >
-      <h2 style={{ color: colors.white, paddingTop: "20px", fontSize: "2rem" }}> Raymond Zhang </h2>
+      <h2 style={{ color: colors.white, paddingTop: "20px" }}> Raymond Zhang </h2>
       <h3 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Penultimate Software Engineering Student </h3>
       <h3 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Based in Auckland, New Zealand </h3>
       <h3 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Stuck in vim since 2020 </h3>
