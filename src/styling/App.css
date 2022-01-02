@@ -395,10 +395,6 @@ h1 {
 
 @media only screen and (max-width: 800px) {
 
-    html, body {
-        overflow-x: hidden;
-    }
-
     h1 {
         font-size: 48px;
     }
@@ -412,7 +408,6 @@ h1 {
     }
 
     .full_section {
-        justify-content: center;
         width: 100vw;
         height: 200vh;
     }
@@ -503,26 +498,27 @@ h1 {
     }
 
     .carousel_slide {
-        width: 70vw;
+        width: 65vw;
         padding: 0;
     }
 
     .carousel_slide h1 {
-        font-size: 32px;
+        font-size: 26px;
     }
     
     .carousel_slide p {
-        font-size: 15px;
+        font-size: 14px;
         text-align: center;
     }
 
     .carousel_slide li {
-        font-size: 15px;
+        font-size: 14px;
         text-align: left;
     }
 
     .button_next {
         margin-left: 0;
+        margin-right: 20px;
     }
 
     .carousel__dot {
