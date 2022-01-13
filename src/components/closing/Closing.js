@@ -61,6 +61,7 @@ function Closing({
         <div
           className="full_section"
           id={id}
+          style={{ background: "linear-gradient(90deg, #000000 35%, #111111 35%)" }}
         >
 
             <div className="section_two_column">
@@ -70,7 +71,7 @@ function Closing({
                         <div className="arrow_section_up">
                             <NavArrowUp coloring={colors.white} scrollUp={scrollUp} tooltipUp={tooltipUp}></NavArrowUp>
                         </div>
-                        <h1 style={{ color: colors.green, textAlign: "center" }}> Bored? </h1>
+                        <h1 style={{ color: colors.green, textAlign: "center" }}> ??? </h1>
                         <h3 style={{ color: colors.white, textAlign: "center" }}> 
                             Just for fun: explore the songs I've recently listened to and liked on spotify. Click refresh to randomly retrieve a different song. 
                         </h3>

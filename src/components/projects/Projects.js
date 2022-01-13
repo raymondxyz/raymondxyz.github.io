@@ -16,6 +16,7 @@ function Projects({
         <div
           className="full_section"
           id={id}
+          style={{ background: "linear-gradient(90deg, #ECECEC 35%, #FFFFFF 35%)" }}
         >
             <div className="section_two_column">
 

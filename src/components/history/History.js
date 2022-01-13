@@ -15,6 +15,7 @@ function History({
         <div
           className="full_section"
           id={id}
+          style={{ background: "linear-gradient(90deg, #000000 35%, #111111 35%)" }}
         >
 
             <div className="section_two_column">

@@ -17,6 +17,7 @@ function Skills({
         <div
           className="full_section"
           id={id}
+          style={{ background: "linear-gradient(90deg, #ECECEC 35%, #FFFFFF 35%)" }}
         >
             <div className="section_two_column">
                 <ScrollAnimation animateIn={"animate__fadeInLeft"} delay="200" duration="0.7" animateOnce={true}>
