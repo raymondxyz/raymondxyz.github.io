@@ -74,7 +74,7 @@ function Closing({
                         </div>
                         <h1 style={{ color: colors.green, textAlign: "center" }}> ??? </h1>
                         <h3 style={{ color: colors.white, textAlign: "center" }}> 
-                            Just for fun: explore the songs I've recently listened to and liked on spotify. Click refresh to randomly retrieve a different song. 
+                            In memory of my first attempt at API calls: explore the songs I've recently listened to on Spotify. Click refresh to randomly retrieve a different song. 
                         </h3>
                         <div className="arrow_section_down">
                         </div>
