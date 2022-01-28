@@ -5,6 +5,7 @@ import data0 from "../../assets/response_offset0.json";
 import data1 from "../../assets/response_offset100.json";
 import data2 from "../../assets/response_offset200.json";
 import data3 from "../../assets/response_offset300.json";
+import data4 from "../../assets/response_offset400.json";
 import ScrollAnimation from "react-animate-on-scroll";
 
 var spotifyIdentifier = "6vvoQKMci0NB7Zbo10t61N"
@@ -17,7 +18,7 @@ var totalTracks = 1;
 // hardcode sensitive data into the publicly available code.
 function loadSpotifyIDS() {
 
-    const data = [data0, data1, data2, data3];
+    const data = [data0, data1, data2, data3, data4];
     const identifiers = []
     var sum = 0;
     data.forEach( jsonFile => {

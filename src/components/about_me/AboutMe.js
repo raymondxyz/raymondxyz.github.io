@@ -35,7 +35,7 @@ function AboutMe({
               </h3>
 
               <h3 style={{ color: colors.white, textAlign: "center" }}> 
-                Basketball & Running
+                Basketball & Exercise
               </h3>
 
               <h3 style={{ color: colors.white, textAlign: "center" }}> 
@@ -43,7 +43,7 @@ function AboutMe({
               </h3>
 
               <h3 style={{ color: colors.white, textAlign: "center" }}> 
-                Baking & Eating Out
+                Baking & Swimming
               </h3>
 
               <h3 style={{ color: colors.white, textAlign: "center" }}> 

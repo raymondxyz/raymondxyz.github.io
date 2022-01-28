@@ -23,7 +23,7 @@ function NavArrowUp({
     }
 
     return (
-        <div style={{ display: "block" }}>
+        <div style={{ display: "block", overflow: "hidden" }}>
             <div style={{ display: "flex" }}>
                 <Link
                     onMouseEnter={toggleIsHover}
