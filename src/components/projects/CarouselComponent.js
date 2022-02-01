@@ -42,7 +42,7 @@ function CarouselComponent() {
               <Slide index={1}>
                 <div className="carousel_slide">
                   <h1> Optical Character Recognition Tool </h1>
-                  <p> Python based program to assist with scanning documents in various file formats, to then recognise characters which are laid out in a tabular format, whic are then extracte and piped to excel.
+                  <p> Python based program to assist with extracting data laid out in tabular format from various file types, which are then extracted and piped to excel.
                     Primarily used for efficiently extracting business data to feed financial models built in excel.
                   </p>
                   <div className="slide_two_image">
@@ -53,15 +53,15 @@ function CarouselComponent() {
               </Slide>
               <Slide index={2}>
                 <div className="carousel_slide">
-                  <h1> Kemu Kupu </h1>
-                  <p> Java & Bash based educational platform based on a quiz-format to promote learning of the native maori language amongst young New Zealand children. </p>
+                  <h1> Kēmu Kupu </h1>
+                  <p> Java & Bash based educational platform designed on a quiz-format to promote learning of the native Māori language amongst young New Zealand children. </p>
                   <img src={Kemukupu} alt="educational quiz platform demonstration" className="slide_image"></img>
                 </div>
               </Slide>
               <Slide index={3}>
                 <div className="carousel_slide">
                   <h1> Data Webscraper </h1>
-                  <p> Python based webscraper, used to access HTML and to extract all data fields of objects from a Qualtrics dashboard (as such data is otherwise not easily accesible). Allows for automated reporting and tracking of Qualtrics dashboard data. </p>
+                  <p> Python based webscraper, used to access HTML and to extract all information fields of data objects from a Qualtrics dashboard (as such data is otherwise not easily accesible). Allows for automated reporting and tracking of Qualtrics dashboard data. </p>
                   <div className="slide_two_image">
                     <img src={QualtricsPull} alt="snippet of code" className="slide_image"></img>
                     <img src={PullOutput} alt="column of excel data" className="slide_image"></img>
