@@ -1,8 +1,9 @@
 import React from 'react';
-import { colors } from '../../styling/colors'
+import { colors } from '../../styling/colors';
 import NavArrowDown from '../miscellaneous/NavArrowDown';
 import NavArrowUp from '../miscellaneous/NavArrowUp';
 import ScrollAnimation from 'react-animate-on-scroll';
+import Timeline from './Timeline';
 
 function History({
     scrollDown,
@@ -36,9 +37,9 @@ function History({
                 </ScrollAnimation>
 
                 <ScrollAnimation animateIn={"animate__fadeInRight"} delay="200" duration="0.7" animateOnce={true}>
-                    <div className="right_column_content" style={{ backgroundColor: "#111111" }}>
+                    <div className="history_window" style={{ backgroundColor: "#111111" }}>
 
-                        <h2 style={{ color: "white" }}> Haven't got around to this yet - life has been busy! </h2>
+                        <Timeline></Timeline>
                         
                     </div>
                 </ScrollAnimation>

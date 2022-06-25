@@ -162,6 +162,96 @@ h1, h2 ,h3 ,p {
 }
 
 /**
+* CSS for History Section
+**/
+
+.history_window {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    width: 50vw;
+    padding: 5vh 7.5vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.timeline_container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 80vh;
+    width: 50vw;
+    padding: 20px 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.timeline_container::-webkit-scrollbar {
+    display: none;
+}
+
+.timeline_container::after {
+    background-color: #1DB954;
+    content: "";
+    position: absolute;
+    left: calc(50% + 0.52em);
+    width: 4px;
+    height: calc(200px * 7 + 80px);
+}
+
+.timeline_bookend {
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+}
+
+.timeline_bookend_mark {
+    background-color: #FFFFFF;
+    border: 3px solid #1DB954;
+    position: absolute;
+    align-self: center;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    z-index: 100;
+    transform: rotateZ(45deg);
+}
+
+.timeline_element {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 50vw;
+    margin: 100px 0;
+
+}
+
+.timeline_element:nth-child(odd) {
+    justify-content: flex-end;
+}
+
+.timeline_content {
+    width: 250px;
+    height: 150px;
+    transform: translateY(-75px);
+    position: absolute;
+    background-color: #FFFFFF;
+}
+
+.timeline_mark {
+    background-color: #FFFFFF;
+    border: 3px solid #1DB954;
+    border-radius: 50%;
+    position: absolute;
+    align-self: center;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    z-index: 100;
+}
+
+/**
 * CSS for Projects (Mainly Carousel)
 **/
 
@@ -384,7 +474,7 @@ h1, h2 ,h3 ,p {
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
-	animation-duration: 1.7s;
+	animation-duration: 1.4s;
 }
 
 @keyframes fadeInOpacity {
