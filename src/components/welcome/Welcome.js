@@ -78,7 +78,7 @@ function Welcome({
       <h3 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Penultimate Software Engineering Student </h3>
       <h3 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Based in Auckland, New Zealand </h3>
       <h3 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Always interested in trying new things </h3>
-      <h3 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Click the background or click below </h3>
+      <h3 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Learn more about me below! </h3>
     </div>
   )
           
@@ -140,7 +140,7 @@ function Welcome({
             to={{ marginLeft: "0" }}
             keys={(item) => item.key}
             config={config.slow}
-            onRest={() => setTimeout(() => setSpringDone(true), 2000)}
+            onRest={() => setTimeout(() => setSpringDone(true), 1000)}
           >
               {item => styles => <animated.div style={styles}>{item}</animated.div>}
             </Trail>

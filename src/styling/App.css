@@ -132,6 +132,7 @@ h1, h2 ,h3 ,p {
     justify-content: center;
     row-gap: 40px;
     column-gap: 90px;
+    overflow-x: visible;
 }
 
 .skills_section .skill_icon {

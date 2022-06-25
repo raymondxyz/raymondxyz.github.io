@@ -1,6 +1,6 @@
 import React from "react";
 import {FaReact, FaJava, FaPython, FaHtml5, FaCss3Alt, FaGitAlt, FaJsSquare} from "react-icons/fa";
-import {SiCplusplus, SiGnubash} from "react-icons/si";
+import {SiSelenium, SiCplusplus, SiGnubash} from "react-icons/si";
 
 
 function SkillsComponent() {
@@ -39,6 +39,11 @@ function SkillsComponent() {
             <div className="skill_component">
                 <FaGitAlt className="skill_icon"></FaGitAlt>
                 <h3> Git </h3>
+                <p> </p>
+            </div>
+            <div className="skill_component">
+                <SiSelenium className="skill_icon"></SiSelenium>
+                <h3> Selenium </h3>
                 <p> </p>
             </div>
             <div className="skill_component">
