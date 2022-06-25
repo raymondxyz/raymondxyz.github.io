@@ -29,13 +29,9 @@ function ParticleBackground({
                 fpsLimit: 60,
                 interactivity: {
                 events: {
-                    onClick: {
+                    onHover: {
                     enable: true,
                     mode: "repulse",
-                    },
-                    onHover: {
-                    enable: false,
-                    mode: "bounce",
                     },
                     resize: true,
                 },
@@ -53,7 +49,7 @@ function ParticleBackground({
                     quantity: 4,
                     },
                     repulse: {
-                    distance: 200,
+                    distance: 110,
                     duration: 0.8,
                     },
                 },
@@ -64,20 +60,20 @@ function ParticleBackground({
                 },
                 links: {
                     color: "#ffffff",
-                    distance: 150,
+                    distance: 200,
                     enable: true,
-                    opacity: 0.5,
+                    opacity: 0.4,
                     width: 1,
                 },
                 collisions: {
-                    enable: true,
+                    enable: false,
                 },
                 move: {
                     direction: "none",
                     enable: true,
                     outMode: "bounce",
-                    random: false,
-                    speed: 3,
+                    random: true,
+                    speed: 1.5,
                     straight: false,
                 },
                 number: {
@@ -85,7 +81,7 @@ function ParticleBackground({
                     enable: true,
                     area: 800,
                     },
-                    value: 90,
+                    value: 70,
                 },
                 opacity: {
                     value: 0.5,
