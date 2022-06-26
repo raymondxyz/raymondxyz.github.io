@@ -72,6 +72,7 @@ function Welcome({
 
   content.push(
     <div
+      className="welcome_text"
       key="6"
     >
       <h2 style={{ color: colors.white, paddingTop: "20px" }}> Raymond Zhang </h2>

@@ -14,12 +14,12 @@ function History({
 }) {
     return (
         <div
-          className="full_section"
+          className="full_section history_section"
           id={id}
           style={{ background: "linear-gradient(90deg, #000000 35%, #111111 35%)" }}
         >
 
-            <div className="section_two_column">
+            <div className="section_two_column history_section">
 
                 <ScrollAnimation animateIn={"animate__fadeInLeft"} delay="200" duration="0.7" animateOnce={true}>
                     <div className="left_column_content" style={{ backgroundColor: "#000000" }}>
