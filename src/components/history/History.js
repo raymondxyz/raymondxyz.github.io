@@ -28,7 +28,7 @@ function History({
                         </div>
                         <h1 style={{ color: colors.green, textAlign: "center" }}> History </h1>
                         <h3 style={{ color: colors.white, textAlign: "center" }}> 
-                            A trip down memory lane: my academic and professional progression over the years. 
+                            A trip down memory lane: my academic and professional progression over the years. Scroll the timeline on the right.
                         </h3>
                         <div className="arrow_section_down">
                             <NavArrowDown coloring={colors.white} scrollDown={scrollDown} tooltipDown={tooltipDown}></NavArrowDown>

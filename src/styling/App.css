@@ -197,7 +197,7 @@ h1, h2 ,h3 ,p {
     position: absolute;
     left: calc(50% + 0.52em);
     width: 4px;
-    height: calc(200px * 7 + 80px);
+    height: calc(24vh * 5 + 80px);
 }
 
 .timeline_bookend {
@@ -223,8 +223,7 @@ h1, h2 ,h3 ,p {
     flex-direction: row;
     overflow: hidden;
     width: 50vw;
-    margin: 100px 0;
-
+    margin: 12vh 0;
 }
 
 .timeline_element:nth-child(odd) {
@@ -232,11 +231,16 @@ h1, h2 ,h3 ,p {
 }
 
 .timeline_content {
-    width: 250px;
-    height: 150px;
+    width: 18vw;
+    height: 14vh;
+    display: flex;
+    flex-direction: column;
     transform: translateY(-75px);
     position: absolute;
     background-color: #FFFFFF;
+    border-radius: 1.5vw;
+    padding: 1vw;
+    font-size: calc(0.2em + 0.7vw);
 }
 
 .timeline_mark {
@@ -249,6 +253,37 @@ h1, h2 ,h3 ,p {
     width: 15px;
     height: 15px;
     z-index: 100;
+}
+
+.timeline_header_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+.timeline_header_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12vw;
+}
+
+.timeline_image {
+    margin-left: 1vw;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.timeline_text_container {
+    margin: 1vh 1vw;
+    width: 16vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 /**
