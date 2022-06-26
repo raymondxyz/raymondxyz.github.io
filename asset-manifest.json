@@ -1,33 +1,37 @@
 {
   "files": {
-    "main.css": "/static/css/main.02dfd8e2.chunk.css",
-    "main.js": "/static/js/main.d2d7736b.chunk.js",
-    "main.js.map": "/static/js/main.d2d7736b.chunk.js.map",
+    "main.css": "/static/css/main.3e3c10a6.chunk.css",
+    "main.js": "/static/js/main.a2d70894.chunk.js",
+    "main.js.map": "/static/js/main.a2d70894.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ce0af3d2.js",
     "runtime-main.js.map": "/static/js/runtime-main.ce0af3d2.js.map",
     "static/css/2.e2027c6a.chunk.css": "/static/css/2.e2027c6a.chunk.css",
-    "static/js/2.119696fc.chunk.js": "/static/js/2.119696fc.chunk.js",
-    "static/js/2.119696fc.chunk.js.map": "/static/js/2.119696fc.chunk.js.map",
+    "static/js/2.8d51bb7d.chunk.js": "/static/js/2.8d51bb7d.chunk.js",
+    "static/js/2.8d51bb7d.chunk.js.map": "/static/js/2.8d51bb7d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.99935ddaa050f6356d92dcd392ff61bc.js": "/precache-manifest.99935ddaa050f6356d92dcd392ff61bc.js",
+    "precache-manifest.bdc0d733636c77845e87805a95fce182.js": "/precache-manifest.bdc0d733636c77845e87805a95fce182.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.e2027c6a.chunk.css.map": "/static/css/2.e2027c6a.chunk.css.map",
-    "static/css/main.02dfd8e2.chunk.css.map": "/static/css/main.02dfd8e2.chunk.css.map",
-    "static/js/2.119696fc.chunk.js.LICENSE.txt": "/static/js/2.119696fc.chunk.js.LICENSE.txt",
+    "static/css/main.3e3c10a6.chunk.css.map": "/static/css/main.3e3c10a6.chunk.css.map",
+    "static/js/2.8d51bb7d.chunk.js.LICENSE.txt": "/static/js/2.8d51bb7d.chunk.js.LICENSE.txt",
+    "static/media/SAP_logo.png": "/static/media/SAP_logo.47da9d75.png",
+    "static/media/atlassian_logo.png": "/static/media/atlassian_logo.18672c07.png",
     "static/media/collage.png": "/static/media/collage.273016ce.png",
     "static/media/developets.png": "/static/media/developets.6e90c011.png",
     "static/media/houghlines.png": "/static/media/houghlines.e738abf9.png",
     "static/media/kemukupu.png": "/static/media/kemukupu.408c8e32.png",
     "static/media/ocroutput.png": "/static/media/ocroutput.d45f3921.png",
     "static/media/profile_photo.jpg": "/static/media/profile_photo.d22c0879.jpg",
+    "static/media/profile_photo_GAN.png": "/static/media/profile_photo_GAN.fbcaeb3f.png",
     "static/media/pullOutput.png": "/static/media/pullOutput.9f450d01.png",
-    "static/media/qualtricsPull.png": "/static/media/qualtricsPull.d2160093.png"
+    "static/media/qualtricsPull.png": "/static/media/qualtricsPull.d2160093.png",
+    "static/media/uoa_logo.png": "/static/media/uoa_logo.f929debd.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ce0af3d2.js",
     "static/css/2.e2027c6a.chunk.css",
-    "static/js/2.119696fc.chunk.js",
-    "static/css/main.02dfd8e2.chunk.css",
-    "static/js/main.d2d7736b.chunk.js"
+    "static/js/2.8d51bb7d.chunk.js",
+    "static/css/main.3e3c10a6.chunk.css",
+    "static/js/main.a2d70894.chunk.js"
   ]
 }
