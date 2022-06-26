@@ -6,36 +6,35 @@ import data1 from "../../assets/response_offset100.json";
 import data2 from "../../assets/response_offset200.json";
 import data3 from "../../assets/response_offset300.json";
 import data4 from "../../assets/response_offset400.json";
+import data5 from "../../assets/response_offset500.json";
+import data6 from "../../assets/response_offset600.json";
 import ScrollAnimation from "react-animate-on-scroll";
 
-var spotifyIdentifier = "6vvoQKMci0NB7Zbo10t61N"
-var allIdentifiers;
+var spotifyIdentifier = "6vvoQKMci0NB7Zbo10t61N";
+var allIdentifiers = [];
 var totalTracks = 1;
+
+// To run a full live connection to spotify is possible but requires significant effort and concerns around security on my personal account/hard-coding sensitive information.
+// Consequently, we will take the API response data as json files and read these static files stored along with our web-app's files.
 
 // This function is crucial for the component to work. We need it to load the array of string IDs. We default the ID value
 // to a meenoi song in case it doesn't load before the script loads, but otherwise this will load before user clicks reroll.
-// We have not used an API (anymore) because it requires the use of authorisation (OAuth 2.0) and I don't want to
-// hardcode sensitive data into the publicly available code.
 function loadSpotifyIDS() {
 
-    const data = [data0, data1, data2, data3, data4];
-    const identifiers = []
+    const data = [data0, data1, data2, data3, data4, data5, data6];
     var sum = 0;
     data.forEach( jsonFile => {
         jsonFile.items.forEach(trackitem => {
-            identifiers.push(trackitem.track.id); 
+            allIdentifiers.push(trackitem.track.id); 
             sum++;
         })
     })
 
     totalTracks = sum;
-    allIdentifiers = identifiers;
 }
 
 function Closing({
-    scrollDown,
     scrollUp,
-    tooltipDown,
     tooltipUp,
     id
 }) {
@@ -74,7 +73,7 @@ function Closing({
                         </div>
                         <h1 style={{ color: colors.green, textAlign: "center" }}> ??? </h1>
                         <h3 style={{ color: colors.white, textAlign: "center" }}> 
-                            In memory of my first attempt at API calls: explore the songs I've recently listened to on Spotify. Click refresh to randomly retrieve a different song. 
+                            A first attempt at understanding API's: explore the songs I've recently listened to on Spotify. Click refresh to randomly retrieve a different song. 
                         </h3>
                         <div className="arrow_section_down">
                         </div>
