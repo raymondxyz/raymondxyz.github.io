@@ -5,6 +5,9 @@ import Kemukupu from "../../assets/kemukupu.png";
 import Houghlines from "../../assets/houghlines.png";
 import Ocroutput from "../../assets/ocroutput.png";
 import QualtricsPull from "../../assets/qualtricsPull.png";
+import AndroidAppScreens from "../../assets/androidAppScreens.png";
+import AndroidAppDesign from "../../assets/androidAppDesign.png";
+import DashboardMov from "../../assets/dashboard.mov";
 import PullOutput from "../../assets/pullOutput.png";
 import { colors } from "../../styling/colors";
 import {FaAngleLeft, FaAngleRight} from "react-icons/fa";
@@ -15,7 +18,7 @@ function CarouselComponent() {
       <CarouselProvider
         naturalSlideWidth={60}
         naturalSlideHeight={80}
-        totalSlides={4}
+        totalSlides={6}
         infinite={true}
         isPlaying={true}
         interval={7000}
@@ -40,6 +43,27 @@ function CarouselComponent() {
                 </div>
               </Slide>
               <Slide index={1}>
+              <div className="carousel_slide">
+                  <h1> Scheduling Solver </h1>
+                  <p>  High-performance project targeted at determinin an optimal route between nodes in a digraph using A* algorithm and Branch and Bound algorithm. </p>
+                  <div className="slide_image">
+                    <video controls className="video_container">
+                      <source src={DashboardMov}/>
+                    </video>
+                  </div>
+                </div>
+              </Slide>
+              <Slide index={2}>
+                <div className="carousel_slide">
+                  <h1> Android Application Demo (Galleria) </h1>
+                  <p> Android application representing a mock artwork marketplace platform, built using Java. </p>
+                  <div className="slide_two_image">
+                    <img src={AndroidAppScreens} alt="Example phone screenshots" className="slide_image"></img>
+                    <img src={AndroidAppDesign} alt="Architecture design of android application" className="slide_image"></img>
+                  </div>
+                </div>
+              </Slide>
+              <Slide index={4}>
                 <div className="carousel_slide">
                   <h1> Optical Character Recognition Tool </h1>
                   <p> Python based program to assist with extracting data laid out in tabular format from various file types, which are then extracted and piped to excel.
@@ -51,14 +75,14 @@ function CarouselComponent() {
                   </div>
                 </div>
               </Slide>
-              <Slide index={2}>
+              <Slide index={3}>
                 <div className="carousel_slide">
                   <h1> Kēmu Kupu </h1>
                   <p> Java & Bash based educational platform designed on a quiz-format to promote learning of the native Māori language amongst young New Zealand children. </p>
                   <img src={Kemukupu} alt="educational quiz platform demonstration" className="slide_image"></img>
                 </div>
               </Slide>
-              <Slide index={3}>
+              <Slide index={5}>
                 <div className="carousel_slide">
                   <h1> Data Webscraper </h1>
                   <p> Python based webscraper, used to access HTML and to extract all information fields of data objects from a Qualtrics dashboard (as such data is otherwise not easily accesible). Allows for automated reporting and tracking of Qualtrics dashboard data. </p>
@@ -68,6 +92,7 @@ function CarouselComponent() {
                   </div>
                 </div>
               </Slide>
+              
             </Slider>
 
             <DotGroup className="carousel_dotgroup"></DotGroup>

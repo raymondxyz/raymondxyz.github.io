@@ -317,6 +317,11 @@ h1, h2 ,h3 ,p {
     justify-content: space-between;
 } 
 
+.video_container {
+    max-width: 45vw;
+    max-height: 50vh;
+}
+
 .slide_image {
     max-width: 100%;
     max-height: 100%;
