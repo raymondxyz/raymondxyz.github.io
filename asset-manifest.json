@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.3e3c10a6.chunk.css",
-    "main.js": "/static/js/main.a2d70894.chunk.js",
-    "main.js.map": "/static/js/main.a2d70894.chunk.js.map",
+    "main.css": "/static/css/main.2d59d047.chunk.css",
+    "main.js": "/static/js/main.d3c51b37.chunk.js",
+    "main.js.map": "/static/js/main.d3c51b37.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ce0af3d2.js",
     "runtime-main.js.map": "/static/js/runtime-main.ce0af3d2.js.map",
     "static/css/2.e2027c6a.chunk.css": "/static/css/2.e2027c6a.chunk.css",
-    "static/js/2.8d51bb7d.chunk.js": "/static/js/2.8d51bb7d.chunk.js",
-    "static/js/2.8d51bb7d.chunk.js.map": "/static/js/2.8d51bb7d.chunk.js.map",
+    "static/js/2.8ac5aa33.chunk.js": "/static/js/2.8ac5aa33.chunk.js",
+    "static/js/2.8ac5aa33.chunk.js.map": "/static/js/2.8ac5aa33.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.bdc0d733636c77845e87805a95fce182.js": "/precache-manifest.bdc0d733636c77845e87805a95fce182.js",
+    "precache-manifest.7f3ae3075fed95ee07b1d755aa6d883a.js": "/precache-manifest.7f3ae3075fed95ee07b1d755aa6d883a.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.e2027c6a.chunk.css.map": "/static/css/2.e2027c6a.chunk.css.map",
-    "static/css/main.3e3c10a6.chunk.css.map": "/static/css/main.3e3c10a6.chunk.css.map",
-    "static/js/2.8d51bb7d.chunk.js.LICENSE.txt": "/static/js/2.8d51bb7d.chunk.js.LICENSE.txt",
+    "static/css/main.2d59d047.chunk.css.map": "/static/css/main.2d59d047.chunk.css.map",
+    "static/js/2.8ac5aa33.chunk.js.LICENSE.txt": "/static/js/2.8ac5aa33.chunk.js.LICENSE.txt",
     "static/media/SAP_logo.png": "/static/media/SAP_logo.47da9d75.png",
+    "static/media/androidAppDesign.png": "/static/media/androidAppDesign.05d33b01.png",
+    "static/media/androidAppScreens.png": "/static/media/androidAppScreens.71743fa7.png",
     "static/media/atlassian_logo.png": "/static/media/atlassian_logo.18672c07.png",
     "static/media/collage.png": "/static/media/collage.273016ce.png",
+    "static/media/dashboard.mov": "/static/media/dashboard.701712c1.mov",
     "static/media/developets.png": "/static/media/developets.6e90c011.png",
     "static/media/houghlines.png": "/static/media/houghlines.e738abf9.png",
     "static/media/kemukupu.png": "/static/media/kemukupu.408c8e32.png",
@@ -30,8 +33,8 @@
   "entrypoints": [
     "static/js/runtime-main.ce0af3d2.js",
     "static/css/2.e2027c6a.chunk.css",
-    "static/js/2.8d51bb7d.chunk.js",
-    "static/css/main.3e3c10a6.chunk.css",
-    "static/js/main.a2d70894.chunk.js"
+    "static/js/2.8ac5aa33.chunk.js",
+    "static/css/main.2d59d047.chunk.css",
+    "static/js/main.d3c51b37.chunk.js"
   ]
 }
