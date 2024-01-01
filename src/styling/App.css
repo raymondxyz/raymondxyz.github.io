@@ -201,7 +201,8 @@ h1, h2 ,h3 ,p {
     position: absolute;
     left: calc(50% + 0.52em);
     width: 4px;
-    height: calc(24vh * 5 + 80px);
+    /* This calculates the green centre backbone line, I forgot the math but its 24vh * (number of elements) + 80px */
+    height: calc(24vh * 7 + 80px);
 }
 
 .timeline_bookend {

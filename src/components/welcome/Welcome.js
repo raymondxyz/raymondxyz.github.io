@@ -76,8 +76,8 @@ function Welcome({
       key="6"
     >
       <h2 style={{ color: colors.white, paddingTop: "20px" }}> Raymond Zhang </h2>
-      <h3 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Final Year Software Engineering Student </h3>
-      <h3 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Based in Auckland, New Zealand </h3>
+      <h3 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Software Engineer </h3>
+      <h3 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Based in Sydney, Australia </h3>
       <h3 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Always interested in trying new things </h3>
       <h3 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Learn more about me below! </h3>
     </div>

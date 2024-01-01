@@ -35,15 +35,15 @@ function AboutMe({
               </h3>
 
               <h3 style={{ color: colors.white, textAlign: "center" }}> 
-                Basketball & Exercise
+                Sports & Exercise
               </h3>
 
               <h3 style={{ color: colors.white, textAlign: "center" }}> 
-                Netflix & Asian Dramas
+                Couch Potato
               </h3>
 
               <h3 style={{ color: colors.white, textAlign: "center" }}> 
-                Baking & Swimming
+                Baking & Cooking
               </h3>
 
               <h3 style={{ color: colors.white, textAlign: "center" }}> 
@@ -63,7 +63,7 @@ function AboutMe({
 
             <div className="right_column_content" style={{ backgroundColor: "#111111" }}>
               <h1 style={{ color: colors.green }}>  About Me </h1>
-              <h2 style={{ color: colors.white }}> Current student at the University of Auckland. I'm passionate about STEM, business and how those two worlds collide.
+              <h2 style={{ color: colors.white }}>  I'm passionate about STEM, business and how those two worlds collide.
               Excited about tech and it's role in solving the big problems across all industries.
               </h2>
 
