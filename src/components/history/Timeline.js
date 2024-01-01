@@ -3,7 +3,6 @@ import atlassian from '../../assets/atlassian_logo.png';
 import SAP from '../../assets/SAP_logo.png';
 import university from '../../assets/uoa_logo.png';
 import profile from '../../assets/profile_photo_GAN.png';
-import { colors } from '../../styling/colors';
 
 function Timeline() {
     return (
@@ -14,7 +13,7 @@ function Timeline() {
             <div className="timeline_element">
                 <div className="timeline_content">
                     <div className="timeline_header_container">
-                        <img className="timeline_image" src={atlassian}></img>
+                        <img className="timeline_image" src={atlassian} alt="atlassian_logo"></img>
                         <div className="timeline_header_text">
                             <p> November 2022 </p>
                             <h4> Atlassian </h4>
@@ -29,7 +28,7 @@ function Timeline() {
             <div className="timeline_element">
                 <div className="timeline_content">
                     <div className="timeline_header_container">
-                        <img className="timeline_image" src={SAP}></img>
+                        <img className="timeline_image" src={SAP} alt="SAP_logo"></img>
                         <div className="timeline_header_text">
                             <p> November 2021 </p>
                             <h4> SAP </h4>
@@ -44,7 +43,7 @@ function Timeline() {
             <div className="timeline_element">
                 <div className="timeline_content">
                     <div className="timeline_header_container">
-                        <img className="timeline_image" src={SAP}></img>
+                        <img className="timeline_image" src={SAP} alt="SAP_logo"></img>
                         <div className="timeline_header_text">
                             <p> January 2021 </p>
                             <h4> SAP </h4>
@@ -59,7 +58,7 @@ function Timeline() {
             <div className="timeline_element">
                 <div className="timeline_content">
                     <div className="timeline_header_container">
-                        <img className="timeline_image" src={university}></img>
+                        <img className="timeline_image" src={university} alt="university_of_auckland_logo"></img>
                         <div className="timeline_header_text">
                             <p> March 2020 </p>
                             <h4 className="long_text"> University of Auckland </h4>
@@ -74,14 +73,14 @@ function Timeline() {
             <div className="timeline_element">
                 <div className="timeline_content">
                     <div className="timeline_header_container">
-                        <img className="timeline_image" src={profile} style={{borderRadius: "1vw"}}></img>
+                        <img className="timeline_image" src={profile} style={{borderRadius: "1vw"}} alt="portrait_image"></img>
                         <div className="timeline_header_text">
                             <p> September 2001 </p>
                             <h4> I'm born! </h4>
                         </div>
                     </div>
                     <div className="timeline_text_container">
-                        <p> I needed an extra component to test timeline scrolling :) </p>
+                        <p> I needed an extra component to test timeline scrolling </p>
                     </div>
                 </div>
                 <div className="timeline_mark"></div>

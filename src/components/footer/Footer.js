@@ -3,9 +3,7 @@ import { FaLinkedin, FaInstagram, FaReact, FaCss3Alt } from "react-icons/fa";
 import { AiOutlineMail, AiFillGithub } from "react-icons/ai";
 import { colors } from "../../styling/colors";
 
-function Footer({
-
-}) {
+function Footer() {
     return (
         <div className="footer_bar">
             <ul className="footer_content_left">

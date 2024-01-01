@@ -27,7 +27,7 @@ function AboutMe({
               <div className="arrow_section_up">
                 <NavArrowUp scrollUp={scrollUp} tooltipUp={tooltipUp} coloring={colors.white}></NavArrowUp>
               </div>
-              <img src={photo} alt="Profile Photo" className="profileImage"></img>
+              <img src={photo} alt="Profile" className="profileImage"></img>
               <h2 style={{ color: colors.green, textAlign: "center", marginBottom: "10px" }}> My Hobbies </h2>
 
               <h3 style={{ color: colors.white, textAlign: "center" }}> 
@@ -68,7 +68,7 @@ function AboutMe({
               </h2>
 
               <div className="collage_container">
-                <img src={collage} alt="Collage Image" className="collage_image"></img>
+                <img src={collage} alt="Collage" className="collage_image"></img>
               </div>
 
             </div>

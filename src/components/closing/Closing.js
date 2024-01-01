@@ -47,7 +47,7 @@ function Closing({
         spotifyIdentifier = allIdentifiers[randomIndex];
 
         // Reload the component
-        setTrack({});
+        setTrack(spotifyIdentifier);
 
     }
 
@@ -73,7 +73,7 @@ function Closing({
                         </div>
                         <h1 style={{ color: colors.green, textAlign: "center" }}> ??? </h1>
                         <h3 style={{ color: colors.white, textAlign: "center" }}> 
-                            A first attempt at understanding API's: explore the songs I've recently listened to on Spotify. Click refresh to randomly retrieve a different song. 
+                            I love music - explore the songs I've recently listened to on Spotify. Click refresh to randomly retrieve a different song. 
                         </h3>
                         <div className="arrow_section_down">
                         </div>
@@ -83,7 +83,14 @@ function Closing({
                 <ScrollAnimation animateIn={"animate__zoomIn"} delay="200" duration="0.7" animateOnce={true}>
                     <div className="right_column_content" style={{ backgroundColor: "#111111" }}>
                         <div className="spotify_container">
-                            <iframe src={"https://open.spotify.com/embed/track/"+spotifyIdentifier} width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                            <iframe
+                                src={"https://open.spotify.com/embed/track/" + track}
+                                title="Spotify Track"
+                                width="100%"
+                                height="380"
+                                allowFullScreen=""
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            ></iframe>
                             <button className="spotify_button" onClick={updateSpotify}>Refresh</button>
                         </div>
                     </div>

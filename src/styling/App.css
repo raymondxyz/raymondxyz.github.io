@@ -483,6 +483,7 @@ h1, h2 ,h3 ,p {
     width: 100px;
     border-color: #1DB954;
     background-color: transparent;
+    border-radius: 0.4em;
     color: white;
     font-size: 1em;
     font-weight: bold;
