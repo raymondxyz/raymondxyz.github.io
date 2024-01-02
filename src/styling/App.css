@@ -631,10 +631,12 @@ h1, h2 ,h3 ,p {
         font-size: 13px;
     }
 
+    /* Need to make the whole thing one panel without being a child scrollable window as that is kinda broken on mobile */
     .history_section {
-        height: calc(100vh + 26vh * 6 + 80px);
+        height: calc(100vh + 26vh * 8 + 80px);
     }
 
+    /* On mobile, we need to accurately define the full length of this component I don't know why, so 26vh * n+1 elements + 80px */
     .history_window {
         display: flex;
         flex-direction: column;
@@ -642,7 +644,7 @@ h1, h2 ,h3 ,p {
         justify-self: flex-start;
         width: 100vw;
         padding: 0 7.5vw;
-        height: calc(26vh * 6 + 80px);
+        height: calc(26vh * 8 + 80px);
         overflow: hidden;
     }
     
@@ -650,14 +652,14 @@ h1, h2 ,h3 ,p {
         display: flex;
         flex-direction: column;
         position: absolute;
-        height: calc(26vh * 6 + 80px);
+        height: calc(26vh * 8 + 80px);
         width: 80vw;
         padding: 10vh 0;
         overflow: hidden;
     }
 
     .timeline_container::after {
-        height: calc(26vh * 5 + 80px);
+        height: calc(26vh * 7 + 80px);
     }
 
     .timeline_element {
