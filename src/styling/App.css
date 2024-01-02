@@ -593,6 +593,7 @@ h1, h2 ,h3 ,p {
     }
 
     .profileImage {
+        object-fit: none;
         width: 200px;
         height: 200px;
     }

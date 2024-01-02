@@ -1,7 +1,7 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
-import photo from "./../../assets/profile_photo.jpg";
+import photo_japan from "./../../assets/profile_japan.jpg";
 import collage from "./../../assets/collage.png";
 import { colors } from "../../styling/colors";
 import NavArrowDown from "../miscellaneous/NavArrowDown";
@@ -27,7 +27,7 @@ function AboutMe({
               <div className="arrow_section_up">
                 <NavArrowUp scrollUp={scrollUp} tooltipUp={tooltipUp} coloring={colors.white}></NavArrowUp>
               </div>
-              <img src={photo} alt="Profile" className="profileImage"></img>
+              <img src={photo_japan} alt="Profile" className="profileImage"></img>
               <h2 style={{ color: colors.green, textAlign: "center", marginBottom: "10px" }}> My Hobbies </h2>
 
               <h3 style={{ color: colors.white, textAlign: "center" }}> 
