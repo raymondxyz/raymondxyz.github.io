@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { colors } from '../../styling/colors'
 import NavArrowUp from '../miscellaneous/NavArrowUp';
+import NavArrowDown from '../miscellaneous/NavArrowDown';
 import data0 from "../../assets/response_offset0.json";
 import data1 from "../../assets/response_offset100.json";
 import data2 from "../../assets/response_offset200.json";
@@ -57,6 +58,8 @@ function Closing({
         updateSpotify();
     }, []);
 
+    const isMobile = window.innerWidth <= 768;
+
     return (
         <div
           className="full_section"
@@ -76,12 +79,15 @@ function Closing({
                             I love music - explore the songs I've recently listened to on Spotify. Click refresh to randomly retrieve a different song. 
                         </h3>
                         <div className="arrow_section_down">
+                            {isMobile ? (                       
+                                <NavArrowDown coloring={colors.white} scrollDown={"musicPlayer"} tooltipUp={"Music"}></NavArrowDown>
+                            ) : <></>}
                         </div>
                     </div>
                 </ScrollAnimation>
 
                 <ScrollAnimation animateIn={"animate__zoomIn"} delay="200" duration="0.7" animateOnce={true}>
-                    <div className="right_column_content" style={{ backgroundColor: "#111111" }}>
+                    <div className="right_column_content" style={{ backgroundColor: "#111111" }} id="musicPlayer">
                         <div className="spotify_container">
                             <iframe
                                 src={"https://open.spotify.com/embed/track/" + track}

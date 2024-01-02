@@ -13,6 +13,7 @@ function Skills({
     tooltipUp,
     id
 }) {
+    const isMobile = window.innerWidth <= 768;
     return (
         <div
           className="full_section"
@@ -30,13 +31,13 @@ function Skills({
                            Some of my technical skills, ordered by proficiency.
                         </h3>
                         <div className="arrow_section_down">
-                            <NavArrowDown coloring={colors.black} scrollDown={scrollDown} tooltipDown={tooltipDown}></NavArrowDown>
+                            <NavArrowDown coloring={colors.black} scrollDown={isMobile ? "skillsRightColumn" : scrollDown} tooltipDown={tooltipDown}></NavArrowDown>
                         </div>
                     </div>
                 </ScrollAnimation>
 
                 <ScrollAnimation animateIn={"animate__fadeInRight"} delay="200" duration="0.7" animateOnce={true}>
-                    <div className="right_column_content" style={{ backgroundColor: "#FFFFFF" }}>
+                    <div className="right_column_content" style={{ backgroundColor: "#FFFFFF" }} id="skillsRightColumn">
                         <SkillsComponent></SkillsComponent>
                     </div>
                 </ScrollAnimation>

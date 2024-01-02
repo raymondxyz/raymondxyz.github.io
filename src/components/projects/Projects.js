@@ -12,6 +12,7 @@ function Projects({
     tooltipUp,
     id
 }) {
+    const isMobile = window.innerWidth <= 768;
     return (
         <div
           className="full_section"
@@ -30,13 +31,13 @@ function Projects({
                             Some old personal projects I've created through University. Get in touch to hear about what I've worked on professionally.
                         </h3>
                         <div className="arrow_section_down">
-                            <NavArrowDown coloring={colors.black} scrollDown={scrollDown} tooltipDown={tooltipDown}></NavArrowDown>
+                            <NavArrowDown coloring={colors.black} scrollDown={isMobile ? "projectsRightColumn" : scrollDown} tooltipDown={tooltipDown}></NavArrowDown>
                         </div>
                     </div>
                 </ScrollAnimation>
 
                 <ScrollAnimation animateIn={"animate__fadeInRight"} delay="200" duration="0.7" animateOnce={true}>
-                    <div className="project_right_column" style={{ backgroundColor: "#FFFFFF" }}>
+                    <div className="project_right_column" style={{ backgroundColor: "#FFFFFF" }} id="projectsRightColumn">
                         <CarouselComponent></CarouselComponent>                    
                     </div>
                 </ScrollAnimation>

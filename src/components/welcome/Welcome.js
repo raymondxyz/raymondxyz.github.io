@@ -26,7 +26,7 @@ function Welcome({
   const content = [];
 
   content.push(
-    <div style={{ margin: "50px 0 0 0" }}>
+    <div style={{ margin: "50px 0 0 0", zIndex: "1", position: "relative" }}>
       <a 
         href="https://www.linkedin.com/in/raymondxyz/" 
         target="_blank" 
@@ -67,13 +67,14 @@ function Welcome({
   )
 
   content.push(
-    <h1 style={{ color: colors.green }} key="5">Welcome!</h1>
+    <h1 style={{ color: colors.green, zIndex: "1", position: "relative" }} key="5">Welcome!</h1>
   )
 
   content.push(
     <div
       className="welcome_text"
       key="6"
+      style={{ zIndex: "1", position: "relative"}}
     >
       <h2 style={{ color: colors.white, paddingTop: "20px" }}> Raymond Zhang </h2>
       <h3 style={{ color: colors.white, paddingLeft: "20px", paddingTop: "20px" }}> - Software Engineer </h3>
@@ -85,7 +86,7 @@ function Welcome({
           
   content.push(
     <div
-      style={{ marginLeft: "1.5vw" }}
+      style={{ marginLeft: "1.5vw", zIndex: "1", position: "relative" }}
       key="7"
     >
       <div className="arrow_section" style={{ margin: "30px", marginLeft: "2.5vw" }}>
@@ -126,7 +127,6 @@ function Welcome({
             backgroundColor: colors.black,
             width: "100vw",
             height: "100vh",
-            zIndex: "-3"
           }}
         >
           <ParticleBackground></ParticleBackground>

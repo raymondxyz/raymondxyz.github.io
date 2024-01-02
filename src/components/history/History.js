@@ -12,6 +12,7 @@ function History({
     tooltipUp,
     id
 }) {
+    const isMobile = window.innerWidth <= 768;
     return (
         <div
           className="full_section history_section"
@@ -31,13 +32,13 @@ function History({
                             A trip down memory lane: my academic and professional progression over the years. Scroll the timeline on the right.
                         </h3>
                         <div className="arrow_section_down">
-                            <NavArrowDown coloring={colors.white} scrollDown={scrollDown} tooltipDown={tooltipDown}></NavArrowDown>
+                            <NavArrowDown coloring={colors.white} scrollDown={isMobile ? "timelineRightColumn" : scrollDown} tooltipDown={tooltipDown}></NavArrowDown>
                         </div>
                     </div>
                 </ScrollAnimation>
 
                 <ScrollAnimation animateIn={"animate__fadeInRight"} delay="200" duration="0.7" animateOnce={true}>
-                    <div className="history_window" style={{ backgroundColor: "#111111" }}>
+                    <div className="history_window" style={{ backgroundColor: "#111111" }} id="timelineRightColumn">
 
                         <Timeline></Timeline>
                         

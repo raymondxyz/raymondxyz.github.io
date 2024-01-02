@@ -14,6 +14,8 @@ function AboutMe({
   tooltipUp,
   id
 }) {
+
+  const isMobile = window.innerWidth <= 768;
     return (
         <div 
           className="full_section"
@@ -52,7 +54,7 @@ function AboutMe({
 
 
               <div className="arrow_section_down">
-                <NavArrowDown scrollDown={scrollDown} tooltipDown={tooltipDown} coloring={colors.white}></NavArrowDown>
+                <NavArrowDown scrollDown={isMobile ? "aboutRightColumn" : scrollDown} tooltipDown={tooltipDown} coloring={colors.white}></NavArrowDown>
               </div>
             </div>
 
@@ -61,7 +63,7 @@ function AboutMe({
 
           <ScrollAnimation animateIn={"animate__fadeInRight"} delay="200" duration="0.7" animateOnce={true}>
 
-            <div className="right_column_content" style={{ backgroundColor: "#111111" }}>
+            <div className="right_column_content" style={{ backgroundColor: "#111111" }} id="aboutRightColumn">
               <h1 style={{ color: colors.green }}>  About Me </h1>
               <h2 style={{ color: colors.white }}>  I'm passionate about STEM, business and how those two worlds collide.
               Excited about tech and it's role in solving the big problems across all industries.
