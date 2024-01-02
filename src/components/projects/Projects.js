@@ -21,7 +21,7 @@ function Projects({
         >
             <div className="section_two_column">
 
-                <ScrollAnimation animateIn={"animate__fadeInLeft"} delay="200" duration="0.7" animateOnce={true}>
+                <ScrollAnimation animateIn={"animate__fadeInLeft"} delay={200} duration={0.7} animateOnce={true}>
                     <div className="left_column_content" style={{ backgroundColor: "#ECECEC" }}>
                         <div className="arrow_section_up">
                             <NavArrowUp coloring={colors.black} scrollUp={scrollUp} tooltipUp={tooltipUp}></NavArrowUp>
@@ -36,7 +36,7 @@ function Projects({
                     </div>
                 </ScrollAnimation>
 
-                <ScrollAnimation animateIn={"animate__fadeInRight"} delay="200" duration="0.7" animateOnce={true}>
+                <ScrollAnimation animateIn={"animate__fadeInRight"} delay={200} duration={0.7} animateOnce={true}>
                     <div className="project_right_column" style={{ backgroundColor: "#FFFFFF" }} id="projectsRightColumn">
                         <CarouselComponent></CarouselComponent>                    
                     </div>

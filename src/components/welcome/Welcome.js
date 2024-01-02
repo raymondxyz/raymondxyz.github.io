@@ -114,7 +114,7 @@ function Welcome({
             config={{ mass: 1, tension: 110, friction: 7 }}
             keys={(item) => item.key}
           >
-            {item => styles => <animated.div style={styles}>
+            {item => styles => <animated.div style={styles} key={item.key}>
               {item}
             </animated.div>
             }
@@ -143,7 +143,7 @@ function Welcome({
             config={config.slow}
             onRest={() => setTimeout(() => setSpringDone(true), 1000)}
           >
-              {item => styles => <animated.div style={styles}>{item}</animated.div>}
+              {item => styles => <animated.div style={styles} key={item.key}>{item}</animated.div>}
             </Trail>
         </div>
       )

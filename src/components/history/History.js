@@ -22,7 +22,7 @@ function History({
 
             <div className="section_two_column history_section">
 
-                <ScrollAnimation animateIn={"animate__fadeInLeft"} delay="200" duration="0.7" animateOnce={true}>
+                <ScrollAnimation animateIn={"animate__fadeInLeft"} delay={200} duration={0.7} animateOnce={true}>
                     <div className="left_column_content" style={{ backgroundColor: "#000000" }}>
                         <div className="arrow_section_up">
                             <NavArrowUp coloring={colors.white} scrollUp={scrollUp} tooltipUp={tooltipUp}></NavArrowUp>
@@ -37,7 +37,7 @@ function History({
                     </div>
                 </ScrollAnimation>
 
-                <ScrollAnimation animateIn={"animate__fadeInRight"} delay="200" duration="0.7" animateOnce={true}>
+                <ScrollAnimation animateIn={"animate__fadeInRight"} delay={200} duration={0.7} animateOnce={true}>
                     <div className="history_window" style={{ backgroundColor: "#111111" }} id="timelineRightColumn">
 
                         <Timeline></Timeline>

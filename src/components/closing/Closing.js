@@ -2,13 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { colors } from '../../styling/colors'
 import NavArrowUp from '../miscellaneous/NavArrowUp';
 import NavArrowDown from '../miscellaneous/NavArrowDown';
-import data0 from "../../assets/response_offset0.json";
-import data1 from "../../assets/response_offset100.json";
-import data2 from "../../assets/response_offset200.json";
-import data3 from "../../assets/response_offset300.json";
-import data4 from "../../assets/response_offset400.json";
-import data5 from "../../assets/response_offset500.json";
-import data6 from "../../assets/response_offset600.json";
+import data0 from "../../assets/response0.json";
+import data1 from "../../assets/response100.json";
+import data2 from "../../assets/response200.json";
+import data3 from "../../assets/response300.json";
+import data4 from "../../assets/response400.json";
+import data5 from "../../assets/response500.json";
+import data6 from "../../assets/response600.json";
+import data7 from "../../assets/response700.json";
+import data8 from "../../assets/response800.json";
 import ScrollAnimation from "react-animate-on-scroll";
 
 var spotifyIdentifier = "6vvoQKMci0NB7Zbo10t61N";
@@ -22,11 +24,12 @@ var totalTracks = 1;
 // to a meenoi song in case it doesn't load before the script loads, but otherwise this will load before user clicks reroll.
 function loadSpotifyIDS() {
 
-    const data = [data0, data1, data2, data3, data4, data5, data6];
+    const data = [data0, data1, data2, data3, data4, data5, data6, data7, data8];
     var sum = 0;
     data.forEach( jsonFile => {
         jsonFile.items.forEach(trackitem => {
-            allIdentifiers.push(trackitem.track.id); 
+            const trackID = trackitem.track.href.split("/").pop();
+            allIdentifiers.push(trackID); 
             sum++;
         })
     })
@@ -42,7 +45,7 @@ function Closing({
 
     const [track, setTrack] = useState();
 
-    const updateSpotify = ()=> {
+    const updateSpotify = () => {
         
         var randomIndex = Math.round(Math.random()*totalTracks);
         spotifyIdentifier = allIdentifiers[randomIndex];
@@ -69,7 +72,7 @@ function Closing({
 
             <div className="section_two_column">
 
-                <ScrollAnimation animateIn={"animate__zoomIn"} delay="200" duration="0.7" animateOnce={true}>
+                <ScrollAnimation animateIn={"animate__zoomIn"} delay={200} duration={0.7} animateOnce={true}>
                     <div className="left_column_content" style={{ backgroundColor: "#000000" }}>
                         <div className="arrow_section_up">
                             <NavArrowUp coloring={colors.white} scrollUp={scrollUp} tooltipUp={tooltipUp}></NavArrowUp>
@@ -86,7 +89,7 @@ function Closing({
                     </div>
                 </ScrollAnimation>
 
-                <ScrollAnimation animateIn={"animate__zoomIn"} delay="200" duration="0.7" animateOnce={true}>
+                <ScrollAnimation animateIn={"animate__zoomIn"} delay={200} duration={0.7} animateOnce={true}>
                     <div className="right_column_content" style={{ backgroundColor: "#111111" }} id="musicPlayer">
                         <div className="spotify_container">
                             <iframe
