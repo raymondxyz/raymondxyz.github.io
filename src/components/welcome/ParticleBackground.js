@@ -1,15 +1,13 @@
 import React from "react";
 import Particles from "react-tsparticles";
 
-function ParticleBackground({
-  
-}) {
+function ParticleBackground() {
     const particlesInit = (main) => {
-        console.log(main);
+        console.log("Initializing...");
     };
 
     const particlesLoaded = (container) => {
-        console.log(container);
+        console.log("Loaded!");
     };
 
     return (
@@ -21,12 +19,15 @@ function ParticleBackground({
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
+                fullScreen: {
+                    enable: false,
+                },
                 background: {
                 color: {
                     value: "black",
                 },
                 },
-                fpsLimit: 60,
+                fpsLimit: 30,
                 interactivity: {
                 events: {
                     onHover: {
@@ -60,7 +61,7 @@ function ParticleBackground({
                 },
                 links: {
                     color: "#ffffff",
-                    distance: 200,
+                    distance: 130,
                     enable: true,
                     opacity: 0.4,
                     width: 1,

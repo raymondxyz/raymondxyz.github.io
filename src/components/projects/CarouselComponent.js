@@ -7,7 +7,7 @@ import Ocroutput from "../../assets/ocroutput.png";
 import QualtricsPull from "../../assets/qualtricsPull.png";
 import AndroidAppScreens from "../../assets/androidAppScreens.png";
 import AndroidAppDesign from "../../assets/androidAppDesign.png";
-import DashboardMov from "../../assets/dashboard.mov";
+import Dashboard from "../../assets/dashboard_306.gif";
 import PullOutput from "../../assets/pullOutput.png";
 import { colors } from "../../styling/colors";
 import {FaAngleLeft, FaAngleRight} from "react-icons/fa";
@@ -45,11 +45,9 @@ function CarouselComponent() {
               <Slide index={1}>
               <div className="carousel_slide">
                   <h1> Scheduling Solver </h1>
-                  <p>  High-performance project targeted at determinin an optimal route between nodes in a digraph using A* algorithm and Branch and Bound algorithm. </p>
-                  <div className="slide_image">
-                    <video controls className="video_container">
-                      <source src={DashboardMov}/>
-                    </video>
+                  <p>  High-performance project targeted at determining an optimal route between nodes in a digraph using A* algorithm and Branch and Bound algorithm. </p>
+                  <div>
+                    <img src={Dashboard} alt="loading..." className="slide_image"></img>
                   </div>
                 </div>
               </Slide>

@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { colors } from '../../styling/colors'
 import NavArrowUp from '../miscellaneous/NavArrowUp';
-import data0 from "../../assets/response_offset0.json";
-import data1 from "../../assets/response_offset100.json";
-import data2 from "../../assets/response_offset200.json";
-import data3 from "../../assets/response_offset300.json";
-import data4 from "../../assets/response_offset400.json";
-import data5 from "../../assets/response_offset500.json";
-import data6 from "../../assets/response_offset600.json";
+import NavArrowDown from '../miscellaneous/NavArrowDown';
+import data0 from "../../assets/response0.json";
+import data1 from "../../assets/response100.json";
+import data2 from "../../assets/response200.json";
+import data3 from "../../assets/response300.json";
+import data4 from "../../assets/response400.json";
+import data5 from "../../assets/response500.json";
+import data6 from "../../assets/response600.json";
+import data7 from "../../assets/response700.json";
+import data8 from "../../assets/response800.json";
 import ScrollAnimation from "react-animate-on-scroll";
 
 var spotifyIdentifier = "6vvoQKMci0NB7Zbo10t61N";
@@ -21,11 +24,12 @@ var totalTracks = 1;
 // to a meenoi song in case it doesn't load before the script loads, but otherwise this will load before user clicks reroll.
 function loadSpotifyIDS() {
 
-    const data = [data0, data1, data2, data3, data4, data5, data6];
+    const data = [data0, data1, data2, data3, data4, data5, data6, data7, data8];
     var sum = 0;
     data.forEach( jsonFile => {
         jsonFile.items.forEach(trackitem => {
-            allIdentifiers.push(trackitem.track.id); 
+            const trackID = trackitem.track.href.split("/").pop();
+            allIdentifiers.push(trackID); 
             sum++;
         })
     })
@@ -41,13 +45,13 @@ function Closing({
 
     const [track, setTrack] = useState();
 
-    const updateSpotify = ()=> {
+    const updateSpotify = () => {
         
         var randomIndex = Math.round(Math.random()*totalTracks);
         spotifyIdentifier = allIdentifiers[randomIndex];
 
         // Reload the component
-        setTrack({});
+        setTrack(spotifyIdentifier);
 
     }
 
@@ -56,6 +60,8 @@ function Closing({
         loadSpotifyIDS();
         updateSpotify();
     }, []);
+
+    const isMobile = window.innerWidth <= 768;
 
     return (
         <div
@@ -66,24 +72,35 @@ function Closing({
 
             <div className="section_two_column">
 
-                <ScrollAnimation animateIn={"animate__zoomIn"} delay="200" duration="0.7" animateOnce={true}>
+                <ScrollAnimation animateIn={"animate__zoomIn"} delay={200} duration={0.7} animateOnce={true}>
                     <div className="left_column_content" style={{ backgroundColor: "#000000" }}>
                         <div className="arrow_section_up">
                             <NavArrowUp coloring={colors.white} scrollUp={scrollUp} tooltipUp={tooltipUp}></NavArrowUp>
                         </div>
                         <h1 style={{ color: colors.green, textAlign: "center" }}> ??? </h1>
                         <h3 style={{ color: colors.white, textAlign: "center" }}> 
-                            A first attempt at understanding API's: explore the songs I've recently listened to on Spotify. Click refresh to randomly retrieve a different song. 
+                            I love music - explore the songs I've recently listened to on Spotify. Click refresh to randomly retrieve a different song. 
                         </h3>
                         <div className="arrow_section_down">
+                            {isMobile ? (                       
+                                <NavArrowDown coloring={colors.white} scrollDown={"musicPlayer"} tooltipUp={"Music"}></NavArrowDown>
+                            ) : <></>}
                         </div>
                     </div>
                 </ScrollAnimation>
 
-                <ScrollAnimation animateIn={"animate__zoomIn"} delay="200" duration="0.7" animateOnce={true}>
-                    <div className="right_column_content" style={{ backgroundColor: "#111111" }}>
+                <ScrollAnimation animateIn={"animate__zoomIn"} delay={200} duration={0.7} animateOnce={true}>
+                    <div className="right_column_content" style={{ backgroundColor: "#111111" }} id="musicPlayer">
                         <div className="spotify_container">
-                            <iframe src={"https://open.spotify.com/embed/track/"+spotifyIdentifier} width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                            <iframe
+                                src={"https://open.spotify.com/embed/track/" + track}
+                                title="Spotify Track"
+                                width="100%"
+                                height="380"
+                                frameBorder="0"
+                                allowFullScreen=""
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            ></iframe>
                             <button className="spotify_button" onClick={updateSpotify}>Refresh</button>
                         </div>
                     </div>

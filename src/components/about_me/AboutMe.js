@@ -1,7 +1,7 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
-import photo from "./../../assets/profile_photo.jpg";
+import photo_japan from "./../../assets/profile_japan.jpg";
 import collage from "./../../assets/collage.png";
 import { colors } from "../../styling/colors";
 import NavArrowDown from "../miscellaneous/NavArrowDown";
@@ -14,6 +14,8 @@ function AboutMe({
   tooltipUp,
   id
 }) {
+
+  const isMobile = window.innerWidth <= 768;
     return (
         <div 
           className="full_section"
@@ -21,13 +23,13 @@ function AboutMe({
           style={{ background: "linear-gradient(90deg, #000000 35%, #111111 35%)" }}
         >
           <div className="section_two_column">
-          <ScrollAnimation animateIn={"animate__fadeInLeft"} delay="200" duration="0.7" animateOnce={true}>
+          <ScrollAnimation animateIn={"animate__fadeInLeft"} delay={200} duration={0.7} animateOnce={true}>
           
             <div className="left_column_content" style={{ backgroundColor: "#000000" }}>
               <div className="arrow_section_up">
                 <NavArrowUp scrollUp={scrollUp} tooltipUp={tooltipUp} coloring={colors.white}></NavArrowUp>
               </div>
-              <img src={photo} alt="Profile Photo" className="profileImage"></img>
+              <img src={photo_japan} alt="Profile" className="profileImage"></img>
               <h2 style={{ color: colors.green, textAlign: "center", marginBottom: "10px" }}> My Hobbies </h2>
 
               <h3 style={{ color: colors.white, textAlign: "center" }}> 
@@ -35,15 +37,15 @@ function AboutMe({
               </h3>
 
               <h3 style={{ color: colors.white, textAlign: "center" }}> 
-                Basketball & Exercise
+                Sports & Exercise
               </h3>
 
               <h3 style={{ color: colors.white, textAlign: "center" }}> 
-                Netflix & Asian Dramas
+                Couch Potato
               </h3>
 
               <h3 style={{ color: colors.white, textAlign: "center" }}> 
-                Baking & Swimming
+                Baking & Cooking
               </h3>
 
               <h3 style={{ color: colors.white, textAlign: "center" }}> 
@@ -52,23 +54,23 @@ function AboutMe({
 
 
               <div className="arrow_section_down">
-                <NavArrowDown scrollDown={scrollDown} tooltipDown={tooltipDown} coloring={colors.white}></NavArrowDown>
+                <NavArrowDown scrollDown={isMobile ? "aboutRightColumn" : scrollDown} tooltipDown={tooltipDown} coloring={colors.white}></NavArrowDown>
               </div>
             </div>
 
           </ScrollAnimation>
 
 
-          <ScrollAnimation animateIn={"animate__fadeInRight"} delay="200" duration="0.7" animateOnce={true}>
+          <ScrollAnimation animateIn={"animate__fadeInRight"} delay={200} duration={0.7} animateOnce={true}>
 
-            <div className="right_column_content" style={{ backgroundColor: "#111111" }}>
+            <div className="right_column_content" style={{ backgroundColor: "#111111" }} id="aboutRightColumn">
               <h1 style={{ color: colors.green }}>  About Me </h1>
-              <h2 style={{ color: colors.white }}> Current student at the University of Auckland. I'm passionate about STEM, business and how those two worlds collide.
+              <h2 style={{ color: colors.white }}>  I'm passionate about STEM, business and how those two worlds collide.
               Excited about tech and it's role in solving the big problems across all industries.
               </h2>
 
               <div className="collage_container">
-                <img src={collage} alt="Collage Image" className="collage_image"></img>
+                <img src={collage} alt="Collage" className="collage_image"></img>
               </div>
 
             </div>

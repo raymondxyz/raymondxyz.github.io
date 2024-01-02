@@ -12,6 +12,7 @@ function Projects({
     tooltipUp,
     id
 }) {
+    const isMobile = window.innerWidth <= 768;
     return (
         <div
           className="full_section"
@@ -20,23 +21,23 @@ function Projects({
         >
             <div className="section_two_column">
 
-                <ScrollAnimation animateIn={"animate__fadeInLeft"} delay="200" duration="0.7" animateOnce={true}>
+                <ScrollAnimation animateIn={"animate__fadeInLeft"} delay={200} duration={0.7} animateOnce={true}>
                     <div className="left_column_content" style={{ backgroundColor: "#ECECEC" }}>
                         <div className="arrow_section_up">
                             <NavArrowUp coloring={colors.black} scrollUp={scrollUp} tooltipUp={tooltipUp}></NavArrowUp>
                         </div>
                         <h1 style={{ color: colors.green, textAlign: "center" }}> Projects </h1>
                         <h3 style={{ color: colors.black, textAlign: "center" }}> 
-                            Some personal projects I've created. Get in touch to hear about what I've worked on professionally.
+                            Some old personal projects I've created through University. Get in touch to hear about what I've worked on professionally.
                         </h3>
                         <div className="arrow_section_down">
-                            <NavArrowDown coloring={colors.black} scrollDown={scrollDown} tooltipDown={tooltipDown}></NavArrowDown>
+                            <NavArrowDown coloring={colors.black} scrollDown={isMobile ? "projectsRightColumn" : scrollDown} tooltipDown={tooltipDown}></NavArrowDown>
                         </div>
                     </div>
                 </ScrollAnimation>
 
-                <ScrollAnimation animateIn={"animate__fadeInRight"} delay="200" duration="0.7" animateOnce={true}>
-                    <div className="project_right_column" style={{ backgroundColor: "#FFFFFF" }}>
+                <ScrollAnimation animateIn={"animate__fadeInRight"} delay={200} duration={0.7} animateOnce={true}>
+                    <div className="project_right_column" style={{ backgroundColor: "#FFFFFF" }} id="projectsRightColumn">
                         <CarouselComponent></CarouselComponent>                    
                     </div>
                 </ScrollAnimation>
